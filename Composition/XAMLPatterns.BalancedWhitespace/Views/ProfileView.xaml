@@ -7,6 +7,9 @@
     d:DesignHeight="145.455"
     d:DesignWidth="430.682">
     <Grid>
-        <Rectangle Fill="#5A5A0D" />
+        <TextBlock
+            Text="Michael P"
+            FontSize="24"
+            Margin="6"/>
     </Grid>
 </UserControl>

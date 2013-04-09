@@ -8,8 +8,7 @@
     d:DesignWidth="302">
     <Grid>
         <Rectangle
-            Fill="#1D1D9C"
-            Margin="6"/>
+            Fill="#1D1D9C"/>
 
     </Grid>
 </UserControl>

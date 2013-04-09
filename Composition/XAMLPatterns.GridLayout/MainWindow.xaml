@@ -5,8 +5,7 @@
         Title="MainWindow"
     Height="513"
     Width="820">
-    <Grid
-        Margin="6">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition
                 Height="5*" />
