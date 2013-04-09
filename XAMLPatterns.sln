@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composition", "Composition", "{6A55BFCD-C040-4B99-9852-5F58B47361F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModel", "ViewModel", "{FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignTimeData", "DesignTimeData", "{E92D9EFB-ADB4-4111-AD11-22BBCA27240B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Animation", "Animation", "{A16946FF-47A9-4A9D-B493-90B99D34DC05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.GridLayout", "Composition\XAMLPatterns.GridLayout\XAMLPatterns.GridLayout.csproj", "{10B38650-4801-419F-BE2F-A060231EE740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.BalancedWhitespace", "Composition\XAMLPatterns.BalancedWhitespace\XAMLPatterns.BalancedWhitespace.csproj", "{074A3430-650D-4EC6-98D0-03F15E8A8F5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10B38650-4801-419F-BE2F-A060231EE740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B38650-4801-419F-BE2F-A060231EE740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B38650-4801-419F-BE2F-A060231EE740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B38650-4801-419F-BE2F-A060231EE740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074A3430-650D-4EC6-98D0-03F15E8A8F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074A3430-650D-4EC6-98D0-03F15E8A8F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074A3430-650D-4EC6-98D0-03F15E8A8F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074A3430-650D-4EC6-98D0-03F15E8A8F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10B38650-4801-419F-BE2F-A060231EE740} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+		{074A3430-650D-4EC6-98D0-03F15E8A8F5C} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+	EndGlobalSection
+EndGlobal
