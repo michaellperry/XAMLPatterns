@@ -10,7 +10,7 @@
     d:DesignWidth="300">
     <Grid>
         <ListBox
-            Margin="6,6,-6,6"
+            Margin="0,6,-7,6"
             FontSize="20"
             BorderThickness="0">
             <System:String>One</System:String>
