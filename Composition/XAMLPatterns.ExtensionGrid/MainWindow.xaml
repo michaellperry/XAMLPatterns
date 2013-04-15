@@ -1,0 +1,11 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Views="clr-namespace:XAMLPatterns.ExtensionGrid.Views" x:Class="XAMLPatterns.ExtensionGrid.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="6">
+        
+    	<Views:ActivityView/>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="XAMLPatterns.ExtensionGrid.Views.ActivityView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="81*"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="82*"/>
+    		<RowDefinition Height="Auto"/>
+    	</Grid.RowDefinitions>
+    	<StackPanel>
+    		<TextBlock Text="What did you do?" FontSize="16" Margin="6,6,6,0"/>
+    	</StackPanel>
+    	<ListBox Grid.Row="1" Margin="6,0,6,6" FontSize="16">
+    		<ListBoxItem Content="Phone screen"/>
+    		<ListBoxItem Content="Interview"/>
+    		<ListBoxItem Content="Referral (no hire)"/>
+    		<ListBoxItem Content="Referral (hire)"/>
+    	</ListBox>
+    	<StackPanel Grid.Row="2">
+    		<TextBlock Text="When did you do it?" Margin="6,6,6,0" FontSize="16"/>
+    		<TextBox Height="23" Text="4/14/2013" Margin="6,0,6,6"/>
+    		<TextBlock Text="Notes:" Margin="6,6,6,0" FontSize="16"/>
+    	</StackPanel>
+    	<TextBox TextWrapping="Wrap" Text="Recommend to hire" Grid.Row="3" FontSize="16" Margin="6,0,6,6" AcceptsReturn="True"/>
+    	<StackPanel Grid.Row="4">
+    		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+    			<Button Content="OK" Margin="6" Width="75" FontSize="16"/>
+    			<Button Content="Cancel" Width="75" FontSize="16" Margin="6"/>
+    		</StackPanel>
+    	</StackPanel>
+            
+    </Grid>
+</UserControl>

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.BalancedWhites
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.Overflow", "Composition\XAMLPatterns.Overflow\XAMLPatterns.Overflow.csproj", "{15D2A2B2-69E2-4D24-B5F2-0481DA06FF70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ExtensionGrid", "Composition\XAMLPatterns.ExtensionGrid\XAMLPatterns.ExtensionGrid.csproj", "{CBAC6B48-CFC6-443B-944A-3025B0A63391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{15D2A2B2-69E2-4D24-B5F2-0481DA06FF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15D2A2B2-69E2-4D24-B5F2-0481DA06FF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15D2A2B2-69E2-4D24-B5F2-0481DA06FF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBAC6B48-CFC6-443B-944A-3025B0A63391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBAC6B48-CFC6-443B-944A-3025B0A63391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBAC6B48-CFC6-443B-944A-3025B0A63391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBAC6B48-CFC6-443B-944A-3025B0A63391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +49,6 @@ Global
 		{10B38650-4801-419F-BE2F-A060231EE740} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{074A3430-650D-4EC6-98D0-03F15E8A8F5C} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{15D2A2B2-69E2-4D24-B5F2-0481DA06FF70} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+		{CBAC6B48-CFC6-443B-944A-3025B0A63391} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 	EndGlobalSection
 EndGlobal
