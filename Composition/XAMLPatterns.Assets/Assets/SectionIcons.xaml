@@ -1,5 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	<Viewbox x:Key="Calendar">
+	<Viewbox x:Key="Icon.Calendar">
   <Canvas Width="42.7499902048279" Height="43.0292215375593">
     <Canvas Canvas.Left="-2.57322573435727" Canvas.Top="-2.3101559">
       <Canvas>
@@ -293,7 +293,7 @@
     </Canvas>
   </Canvas>
   </Viewbox>
-  <Viewbox x:Key="Spreadsheet">
+  <Viewbox x:Key="Icon.Spreadsheet">
 	  <Canvas Width="43.551258921508" Height="44.9897550547098">
     <Canvas Canvas.Left="-2.47437647751576" Canvas.Top="-3.00132144901161">
       <Canvas>
