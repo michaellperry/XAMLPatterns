@@ -1,0 +1,15 @@
+﻿<Application x:Class="XAMLPatterns.Assets.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+        	<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="Assets/CategoryButtons.xaml" />
+				<ResourceDictionary Source="Assets/SectionIcons.xaml"/>
+				<ResourceDictionary Source="Assets/SectionIconBrushes.xaml"/>
+        	</ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
