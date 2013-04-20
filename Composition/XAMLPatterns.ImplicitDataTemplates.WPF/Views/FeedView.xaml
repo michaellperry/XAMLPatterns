@@ -4,27 +4,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:System="clr-namespace:System;assembly=mscorlib"
+    xmlns:m="clr-namespace:XAMLPatterns.ImplicitDataTemplates.WPF.Models"
+    xmlns:c="clr-namespace:XAMLPatterns.ImplicitDataTemplates.WPF.Controls"
     x:Class="XAMLPatterns.ImplicitDataTemplates.WPF.Views.FeedView"
     mc:Ignorable="d"
     d:DesignHeight="300"
-    d:DesignWidth="300">
+    d:DesignWidth="300" DataContext="{DynamicResource Sample.Activity}">
+    <UserControl.Resources>
+        <DataTemplate
+            DataType="{x:Type m:BusinessDevelopmentActivity}">
+            <c:BusinessDevelopmentActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            DataType="{x:Type m:RecruitingActivity}">
+            <c:RecruitingActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            DataType="{x:Type m:UserGroupActivity}">
+            <c:UserGroupActivityControl />
+        </DataTemplate>
+    </UserControl.Resources>
     <Grid>
         <ListBox
             Margin="0,6,-7,6"
             FontSize="20"
-            BorderThickness="0">
-            <System:String>One</System:String>
-            <System:String>Two</System:String>
-            <System:String>Three</System:String>
-            <System:String>Four</System:String>
-            <System:String>Five</System:String>
-            <System:String>Six</System:String>
-            <System:String>Seven</System:String>
-            <System:String>Eight</System:String>
-            <System:String>Nine</System:String>
-            <System:String>Ten</System:String>
-            <System:String>Eleven</System:String>
-            <System:String>Twelve</System:String>
+            BorderThickness="0"
+            ItemsSource="{Binding Activities}" HorizontalContentAlignment="Stretch">
         </ListBox>
     </Grid>
 </UserControl>

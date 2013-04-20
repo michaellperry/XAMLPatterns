@@ -18,9 +18,9 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition
-                Width="30*" />
+                Width="521*" />
             <ColumnDefinition
-                Width="10*" />
+                Width="279*" />
         </Grid.ColumnDefinitions>
 
         <Views:CategoryView

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="XAMLPatterns.ImplicitDataTemplates.WPF.Controls.RecruitingActivityControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="71" d:DesignWidth="300">
+    <Grid d:DataContext="{d:DesignData /SampleData/RecruitingActivitySampleData.xaml}" Background="#FF879E80">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="110"/>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+    	<TextBlock Text="{Binding Date, StringFormat=\{0:M\}}" FontSize="16" Grid.Row="1" Margin="6,3,3,6"/>
+    	<TextBlock Text="{Binding Description}" FontSize="16" Grid.ColumnSpan="2" Margin="6,6,6,3"/>
+    	<TextBlock Text="{Binding Candidate}" FontSize="16" Grid.Column="1" Grid.Row="1" Margin="3,3,6,6"/>
+            
+    </Grid>
+</UserControl>

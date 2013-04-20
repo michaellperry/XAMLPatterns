@@ -82,9 +82,9 @@
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition
-                                Height="74*" />
+                                Height="*" />
                             <RowDefinition
-                                Height="17*" />
+                                Height="Auto" />
                         </Grid.RowDefinitions>
                         <ContentPresenter
                             x:Name="contentPresenter"

@@ -1,6 +1,7 @@
 ﻿<Application x:Class="XAMLPatterns.ImplicitDataTemplates.WPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sample="clr-namespace:XAMLPatterns.ImplicitDataTemplates.WPF.SampleData"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
@@ -11,6 +12,9 @@
                 <ResourceDictionary
                     Source="Themes/Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <sample:ActivitySampleDataSource
+                x:Key="Sample.Activity" />
 
             <SolidColorBrush
                 x:Key="Menu.Static.Background"

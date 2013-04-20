@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using XAMLPatterns.ImplicitDataTemplates.WPF.Models;
+
+namespace XAMLPatterns.ImplicitDataTemplates.WPF.SampleData
+{
+    public class ActivitySampleDataSource
+    {
+        private IEnumerable<Activity> _activities = new List<Activity>
+        {
+            new RecruitingActivity
+            {
+                Date = new DateTime(2013, 4, 16),
+                Description = "Phone screen",
+                Candidate = "Jane Smith"
+            },
+            new RecruitingActivity
+            {
+                Date = new DateTime(2013, 4, 14),
+                Description = "In person interview",
+                Candidate = "George Martin"
+            },
+            new UserGroupActivity
+            {
+                Date = new DateTime(2013, 4, 6),
+                Description = "Speaking",
+                UserGroup = "Dallas XAML"
+            },
+            new BusinessDevelopmentActivity
+            {
+                Date = new DateTime(2013, 4, 2),
+                Description = "Lunch and Learn",
+                Prospect = "Acme Hosting"
+            }
+        };
+
+        public IEnumerable<Activity> Activities
+        {
+            get { return _activities; }
+        }
+    }
+}
