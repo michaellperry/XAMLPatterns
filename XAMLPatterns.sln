@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ControlTemplat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ControlExtension", "Composition\XAMLPatterns.ControlExtension\XAMLPatterns.ControlExtension.csproj", "{7CB673A5-9020-4A67-AEBE-BC46CCA3771B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTemplates.WPF", "Composition\XAMLPatterns.ImplicitDataTemplates.WPF\XAMLPatterns.ImplicitDataTemplates.WPF.csproj", "{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{7CB673A5-9020-4A67-AEBE-BC46CCA3771B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CB673A5-9020-4A67-AEBE-BC46CCA3771B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CB673A5-9020-4A67-AEBE-BC46CCA3771B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +77,6 @@ Global
 		{64F044C7-3219-449F-A088-8B56D331D17A} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{50D0E04C-D13D-462D-BB86-BA66F97817BD} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{7CB673A5-9020-4A67-AEBE-BC46CCA3771B} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 	EndGlobalSection
 EndGlobal
