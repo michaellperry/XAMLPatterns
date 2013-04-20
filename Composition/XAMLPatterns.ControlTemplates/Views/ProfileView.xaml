@@ -11,5 +11,15 @@
             Text="Michael P"
             FontSize="24"
             Margin="6" />
+		<!--
+    	<Menu Margin="6" FontSize="24">
+    		<MenuItem Header="Michael P">
+    			<MenuItem Header="Log On"/>
+    			<MenuItem Header="Log Off"/>
+				<Separator/>
+    			<MenuItem Header="Edit Profile"/>
+    		</MenuItem>
+    	</Menu>
+		-->
     </Grid>
 </UserControl>
