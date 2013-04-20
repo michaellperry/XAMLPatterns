@@ -1,8 +1,8 @@
-﻿<ResourceDictionary
+<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Viewbox
-        x:Key="Category.UserGroup">
+        x:Key="IconButtons.UserGroup">
         <Grid
             Width="48"
             Height="48"
@@ -31,7 +31,7 @@
         </Grid>
     </Viewbox>
     <Viewbox
-        x:Key="Category.Recruiting">
+        x:Key="IconButtons.Recruiting">
         <Grid
             Width="48"
             Height="48"

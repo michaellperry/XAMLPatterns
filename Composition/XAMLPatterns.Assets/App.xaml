@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary>
-        	<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary
-					Source="Assets/CategoryButtons.xaml" />
-				<ResourceDictionary Source="Assets/SectionIcons.xaml"/>
-				<ResourceDictionary Source="Assets/SectionIconBrushes.xaml"/>
-        	</ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+
+    	<ResourceDictionary>
+    		<ResourceDictionary.MergedDictionaries>
+    			<ResourceDictionary Source="Assets/IconButtons.xaml"/>
+    			<ResourceDictionary Source="Assets/SectionHeaders.xaml"/>
+    		</ResourceDictionary.MergedDictionaries>
+    	</ResourceDictionary>
+
     </Application.Resources>
 </Application>
