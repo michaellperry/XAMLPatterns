@@ -1,0 +1,23 @@
+﻿<Window x:Class="XAMLPatterns.JustifiedListBox.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="235.5"
+        DataContext="{StaticResource Sample.Numbers}">
+    <Window.Resources>
+        <DataTemplate
+            x:Key="BlueItemTemplate">
+            <Border
+                Background="#AFAFCE">
+                <TextBlock
+                    Text="{Binding}"
+                    Margin="4" />
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <ListBox
+            ItemsSource="{Binding Numbers}"
+            ItemTemplate="{StaticResource BlueItemTemplate}" HorizontalContentAlignment="Stretch">
+        </ListBox>
+    </Grid>
+</Window>

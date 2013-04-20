@@ -1,0 +1,12 @@
+﻿<Application x:Class="XAMLPatterns.JustifiedListBox.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sample="clr-namespace:XAMLPatterns.JustifiedListBox.WPF.SampleData"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <sample:NumbersSampleDataSource
+            x:Key="Sample.Numbers" />
+
+    </Application.Resources>
+</Application>
