@@ -11,7 +11,9 @@
     <UserControl.Resources>
         <DataTemplate
             x:Key="ActivityItemTemplate">
-            <s:ActivityDataTemplateSelector Content="{Binding}" />
+            <s:ActivityDataTemplateSelector
+				Content="{Binding}"
+				HorizontalContentAlignment="Stretch" />
         </DataTemplate>
         <DataTemplate
             x:Key="BusinessDevelopmentActivity">
@@ -41,8 +43,7 @@
             BorderThickness="0"
             ItemsSource="{Binding Activities}"
             ItemTemplate="{StaticResource ActivityItemTemplate}"
-            ItemContainerStyle="{StaticResource StretchItemContainerStyle}"
-            HorizontalContentAlignment="Stretch">
+			ItemContainerStyle="{StaticResource StretchItemContainerStyle}">
         </ListBox>
     </Grid>
 </UserControl>

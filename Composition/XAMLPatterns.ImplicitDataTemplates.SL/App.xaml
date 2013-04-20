@@ -7,5 +7,6 @@
 
         <sample:ActivitySampleDataSource
             x:Key="Sample.Activity" />
+
     </Application.Resources>
 </Application>
