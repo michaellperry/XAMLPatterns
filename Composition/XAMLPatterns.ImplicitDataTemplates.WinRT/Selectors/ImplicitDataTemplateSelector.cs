@@ -4,7 +4,7 @@ using Windows.UI.Xaml.Media;
 
 namespace XAMLPatterns.ImplicitDataTemplates.WinRT.Selectors
 {
-    public class ActivityDataTemplateSelector : DataTemplateSelector
+    public class ImplicitDataTemplateSelector : DataTemplateSelector
     {
         protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
         {

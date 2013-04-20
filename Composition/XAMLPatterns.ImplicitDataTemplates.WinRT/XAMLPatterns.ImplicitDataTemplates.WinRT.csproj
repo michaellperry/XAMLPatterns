@@ -124,7 +124,7 @@
     <Compile Include="Models\UserGroupActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleData\ActivitySampleDataSource.cs" />
-    <Compile Include="Selectors\ActivityDataTemplateSelector.cs" />
+    <Compile Include="Selectors\ImplicitDataTemplateSelector.cs" />
     <Compile Include="ValueConverters\DateFormatValueConverter.cs" />
     <Compile Include="Views\FeedView.xaml.cs">
       <DependentUpon>FeedView.xaml</DependentUpon>

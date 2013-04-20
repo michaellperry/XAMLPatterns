@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 namespace XAMLPatterns.ImplicitDataTemplates.SL.Selectors
 {
-    public class ActivityDataTemplateSelector : ContentControl
+    public class ImplicitDataTemplateControl : ContentControl
     {
         protected override void OnContentChanged(object oldContent, object newContent)
         {

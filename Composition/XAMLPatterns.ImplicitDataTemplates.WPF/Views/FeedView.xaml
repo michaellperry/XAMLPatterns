@@ -11,25 +11,14 @@
     d:DesignHeight="300"
     d:DesignWidth="300" DataContext="{StaticResource Sample.Activity}">
     <UserControl.Resources>
-        <DataTemplate
-            DataType="{x:Type m:BusinessDevelopmentActivity}">
-            <c:BusinessDevelopmentActivityControl />
-        </DataTemplate>
-        <DataTemplate
-            DataType="{x:Type m:RecruitingActivity}">
-            <c:RecruitingActivityControl />
-        </DataTemplate>
-        <DataTemplate
-            DataType="{x:Type m:UserGroupActivity}">
-            <c:UserGroupActivityControl />
-        </DataTemplate>
     </UserControl.Resources>
     <Grid>
         <ListBox
             Margin="0,6,-7,6"
             FontSize="20"
             BorderThickness="0"
-            ItemsSource="{Binding Activities}" HorizontalContentAlignment="Stretch">
+            ItemsSource="{Binding Activities}"
+            HorizontalContentAlignment="Stretch">
         </ListBox>
     </Grid>
 </UserControl>
