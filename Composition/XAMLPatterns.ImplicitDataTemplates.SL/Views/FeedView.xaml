@@ -9,6 +9,24 @@
     d:DesignHeight="300" d:DesignWidth="400"
     DataContext="{StaticResource Sample.Activity}">
     <UserControl.Resources>
+        <DataTemplate
+            x:Key="ActivityItemTemplate">
+            <s:ImplicitDataTemplateControl
+                Content="{Binding}"
+                HorizontalContentAlignment="Stretch"/>
+        </DataTemplate>
+        <DataTemplate
+            x:Key="BusinessDevelopmentActivity">
+            <c:BusinessDevelopmentActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            x:Key="RecruitingActivity">
+            <c:RecruitingActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            x:Key="UserGroupActivity">
+            <c:UserGroupActivityControl />
+        </DataTemplate>
         <Style
             TargetType="ListBoxItem"
             x:Key="StretchItemContainerStyle">
@@ -24,6 +42,7 @@
             FontSize="20"
             BorderThickness="0"
             ItemsSource="{Binding Activities}"
+            ItemTemplate="{StaticResource ActivityItemTemplate}"
 			ItemContainerStyle="{StaticResource StretchItemContainerStyle}">
         </ListBox>
     </Grid>

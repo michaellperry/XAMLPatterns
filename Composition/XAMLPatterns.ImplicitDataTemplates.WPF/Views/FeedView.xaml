@@ -11,6 +11,18 @@
     d:DesignHeight="300"
     d:DesignWidth="300" DataContext="{StaticResource Sample.Activity}">
     <UserControl.Resources>
+        <DataTemplate
+            DataType="{x:Type m:BusinessDevelopmentActivity}">
+            <c:BusinessDevelopmentActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            DataType="{x:Type m:RecruitingActivity}">
+            <c:RecruitingActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            DataType="{x:Type m:UserGroupActivity}">
+            <c:UserGroupActivityControl />
+        </DataTemplate>
     </UserControl.Resources>
     <Grid>
         <ListBox

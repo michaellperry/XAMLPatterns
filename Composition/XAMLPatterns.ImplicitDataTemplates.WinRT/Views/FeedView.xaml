@@ -13,6 +13,20 @@
     DataContext="{StaticResource Sample.Activity}">
 
     <UserControl.Resources>
+        <s:ImplicitDataTemplateSelector
+            x:Key="ImplicitDataTemplateSelector" />
+        <DataTemplate
+            x:Key="BusinessDevelopmentActivity">
+            <c:BusinessDevelopmentActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            x:Key="RecruitingActivity">
+            <c:RecruitingActivityControl />
+        </DataTemplate>
+        <DataTemplate
+            x:Key="UserGroupActivity">
+            <c:UserGroupActivityControl />
+        </DataTemplate>
         <Style
             TargetType="ListViewItem"
             x:Key="StretchItemContainerStyle">
@@ -29,6 +43,7 @@
             Foreground="Black"
             ItemsSource="{Binding Activities}"
             HorizontalContentAlignment="Stretch"
+            ItemTemplateSelector="{StaticResource ImplicitDataTemplateSelector}"
             ItemContainerStyle="{StaticResource StretchItemContainerStyle}"/>
     </Grid>
 </UserControl>
