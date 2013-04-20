@@ -27,13 +27,22 @@
             x:Key="UserGroupActivity">
             <c:UserGroupActivityControl />
         </DataTemplate>
+        <Style
+            TargetType="ListViewItem"
+            x:Key="StretchItemContainerStyle">
+            <Setter
+                Property="HorizontalContentAlignment"
+                Value="Stretch" />
+        </Style>
     </UserControl.Resources>
     <Grid>
-        <ListBox
+        <ListView
             Margin="0,6,-7,6"
             FontSize="20"
             BorderThickness="0"
             ItemsSource="{Binding Activities}"
-            ItemTemplateSelector="{StaticResource ActivityDataTemplateSelector}"/>
+            ItemTemplateSelector="{StaticResource ActivityDataTemplateSelector}"
+            HorizontalContentAlignment="Stretch"
+            ItemContainerStyle="{StaticResource StretchItemContainerStyle}"/>
     </Grid>
 </UserControl>

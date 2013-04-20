@@ -10,7 +10,7 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-    	<Views:FeedView/>
+    	<Views:FeedView Margin="6"/>
 
     </Grid>
 </Page>
