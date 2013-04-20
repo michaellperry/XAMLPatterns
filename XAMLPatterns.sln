@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTemplates.WinRT", "Composition\XAMLPatterns.ImplicitDataTemplates.WinRT\XAMLPatterns.ImplicitDataTemplates.WinRT.csproj", "{C863CED4-2F0F-4888-BB98-C8ACADB6597C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTemplates.SL", "Composition\XAMLPatterns.ImplicitDataTemplates.SL\XAMLPatterns.ImplicitDataTemplates.SL.csproj", "{953FB6A9-EF47-4EA9-947A-E4D1457AF403}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,16 @@ Global
 		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x86.ActiveCfg = Release|x86
 		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x86.Build.0 = Release|x86
 		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x86.Deploy.0 = Release|x86
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|ARM.ActiveCfg = Release|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|x64.ActiveCfg = Release|Any CPU
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,5 +171,6 @@ Global
 		{7CB673A5-9020-4A67-AEBE-BC46CCA3771B} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{C863CED4-2F0F-4888-BB98-C8ACADB6597C} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+		{953FB6A9-EF47-4EA9-947A-E4D1457AF403} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 	EndGlobalSection
 EndGlobal

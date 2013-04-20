@@ -9,7 +9,7 @@
     x:Class="XAMLPatterns.ImplicitDataTemplates.WPF.Views.FeedView"
     mc:Ignorable="d"
     d:DesignHeight="300"
-    d:DesignWidth="300" DataContext="{DynamicResource Sample.Activity}">
+    d:DesignWidth="300" DataContext="{StaticResource Sample.Activity}">
     <UserControl.Resources>
         <DataTemplate
             DataType="{x:Type m:BusinessDevelopmentActivity}">
