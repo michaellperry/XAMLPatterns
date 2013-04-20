@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ExtensionGrid"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.Assets", "Composition\XAMLPatterns.Assets\XAMLPatterns.Assets.csproj", "{64F044C7-3219-449F-A088-8B56D331D17A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ControlTemplates", "Composition\XAMLPatterns.ControlTemplates\XAMLPatterns.ControlTemplates.csproj", "{50D0E04C-D13D-462D-BB86-BA66F97817BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{64F044C7-3219-449F-A088-8B56D331D17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64F044C7-3219-449F-A088-8B56D331D17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64F044C7-3219-449F-A088-8B56D331D17A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D0E04C-D13D-462D-BB86-BA66F97817BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D0E04C-D13D-462D-BB86-BA66F97817BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D0E04C-D13D-462D-BB86-BA66F97817BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D0E04C-D13D-462D-BB86-BA66F97817BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{15D2A2B2-69E2-4D24-B5F2-0481DA06FF70} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{CBAC6B48-CFC6-443B-944A-3025B0A63391} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{64F044C7-3219-449F-A088-8B56D331D17A} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+		{50D0E04C-D13D-462D-BB86-BA66F97817BD} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 	EndGlobalSection
 EndGlobal
