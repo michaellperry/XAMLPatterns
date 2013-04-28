@@ -1,0 +1,48 @@
+﻿<Window x:Class="XAMLPatterns.StatefulViewModel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:XAMLPatterns.StatefulViewModel.ViewModels"
+        Title="Stateful View Model" Height="350" Width="525">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    <Grid
+        Margin="6">
+        <StackPanel>
+            <ListBox
+                Margin="6"
+                ItemsSource="{Binding People}"
+                SelectedItem="{Binding Person}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock
+                            FontSize="20"
+                            Text="{Binding Name}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <TextBlock
+                Margin="6"
+                FontSize="20"
+                Text="What is your name?"
+                Foreground="Gray" />
+            <TextBox
+                Margin="6"
+                FontSize="26"
+                Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock
+                Margin="6"
+                FontSize="20"
+                Text="How shall I greet you?"
+                Foreground="Gray" />
+            <TextBox
+                Margin="6"
+                FontSize="26"
+                Text="{Binding Greeting, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock
+                Margin="6"
+                FontSize="26"
+                Text="{Binding Salutation}" />
+        </StackPanel>
+    </Grid>
+</Window>

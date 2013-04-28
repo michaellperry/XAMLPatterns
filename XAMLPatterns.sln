@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.JustifiedListB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.JustifiedListBox.WinRT", "Composition\XAMLPatterns.JustifiedListBox.WinRT\XAMLPatterns.JustifiedListBox.WinRT.csproj", "{012E0131-0969-40EA-AA34-4EFAC3F78959}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.StatefulViewModel", "ViewModel\XAMLPatterns.StatefulViewModel\XAMLPatterns.StatefulViewModel.csproj", "{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,16 @@ Global
 		{012E0131-0969-40EA-AA34-4EFAC3F78959}.Release|x86.ActiveCfg = Release|x86
 		{012E0131-0969-40EA-AA34-4EFAC3F78959}.Release|x86.Build.0 = Release|x86
 		{012E0131-0969-40EA-AA34-4EFAC3F78959}.Release|x86.Deploy.0 = Release|x86
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,5 +224,6 @@ Global
 		{953FB6A9-EF47-4EA9-947A-E4D1457AF403} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{D18F4983-0247-4FFC-B57A-68B46BFBA0EC} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{012E0131-0969-40EA-AA34-4EFAC3F78959} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
+		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
 	EndGlobalSection
 EndGlobal
