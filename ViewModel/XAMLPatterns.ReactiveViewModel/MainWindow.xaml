@@ -1,0 +1,35 @@
+﻿<Window
+    x:Class="XAMLPatterns.ReactiveViewModel.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:XAMLPatterns.ReactiveViewModel.ViewModels"
+    Title="MainWindow"
+    Height="350"
+    Width="525">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    <Grid
+        Margin="6">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock
+                Margin="6"
+                FontSize="20"
+                Text="What would you like to search for?"
+                Foreground="Gray" />
+            <TextBox
+                Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}"
+                Margin="6"
+                FontSize="26" />
+        </StackPanel>
+        <ListBox
+            Grid.Row="1"
+            Margin="6"
+            ItemsSource="{Binding Matches}" />
+    </Grid>
+</Window>
