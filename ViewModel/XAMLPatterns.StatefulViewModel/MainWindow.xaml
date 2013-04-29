@@ -9,18 +9,6 @@
     <Grid
         Margin="6">
         <StackPanel>
-            <ListBox
-                Margin="6"
-                ItemsSource="{Binding People}"
-                SelectedItem="{Binding Person}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock
-                            FontSize="20"
-                            Text="{Binding Name}" />
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
             <TextBlock
                 Margin="6"
                 FontSize="20"
