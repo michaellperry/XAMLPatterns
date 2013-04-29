@@ -3,9 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:XAMLPatterns.StatefulViewModel.ViewModels"
         Title="Stateful View Model" Height="350" Width="525">
-    <Window.DataContext>
-        <vm:MainViewModel />
-    </Window.DataContext>
     <Grid
         Margin="6">
         <StackPanel>
@@ -15,22 +12,24 @@
                 Text="What is your name?"
                 Foreground="Gray" />
             <TextBox
+                x:Name="NameTextBox"
+                TextChanged="NameTextBox_TextChanged"
                 Margin="6"
-                FontSize="26"
-                Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                FontSize="26" />
             <TextBlock
                 Margin="6"
                 FontSize="20"
                 Text="How shall I greet you?"
                 Foreground="Gray" />
             <TextBox
+                x:Name="GreetingTextBox"
+                TextChanged="GreetingTextBox_TextChanged"
                 Margin="6"
-                FontSize="26"
-                Text="{Binding Greeting, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                FontSize="26" />
             <TextBlock
+                x:Name="SalutationTextBlock"
                 Margin="6"
-                FontSize="26"
-                Text="{Binding Salutation}" />
+                FontSize="26" />
         </StackPanel>
     </Grid>
 </Window>
