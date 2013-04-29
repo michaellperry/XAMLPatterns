@@ -9,23 +9,5 @@ namespace XAMLPatterns.StatefulViewModel
         {
             InitializeComponent();
         }
-
-        private void NameTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            UpdateSalutation();
-        }
-
-        private void GreetingTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            UpdateSalutation();
-        }
-
-        private void UpdateSalutation()
-        {
-            SalutationTextBlock.Text =
-                string.Format("{0}, {1}!",
-                    GreetingTextBox.Text,
-                    NameTextBox.Text);
-        }
     }
 }
