@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Reactive.Linq;
 using ReactiveUI;
 using XAMLPatterns.ReactiveViewModel.Services;
-using System.Reactive.Linq;
-using System.Reactive.Threading.Tasks;
-using System.Diagnostics;
 
 namespace XAMLPatterns.ReactiveViewModel.ViewModels
 {
@@ -22,23 +18,23 @@ namespace XAMLPatterns.ReactiveViewModel.ViewModels
         {
             _searchService = new SearchService();
 
-            var searchTermChangeEvents = this
-                .ObservableForProperty(x => x.SearchTerm);
-            var searchTerms = searchTermChangeEvents
+            var searchTerms = this
+                .ObservableForProperty(x => x.SearchTerm)
                 .Value()
                 .Throttle(TimeSpan.FromSeconds(0.5));
             var searchResults = searchTerms
                 .SelectMany(searchTerm => _searchService.SearchAsync(searchTerm));
-            var latestResults = searchTerms.CombineLatest(searchResults,
-                (searchTerm, searchResult) => new { searchTerm, searchResult })
-                .Where(c => c.searchResult.SearchTerm == c.searchTerm)
-                .Select(c => c.searchResult);
-            var matches = latestResults.Select(searchResult =>
-                searchResult.Matches);
-            _Matches = matches.ToProperty(this, x => x.Matches);
+            var latestMatches = searchTerms
+                .CombineLatest(searchResults,
+                    (searchTerm, searchResult) =>
+                        searchResult.SearchTerm != searchTerm
+                            ? null
+                            : searchResult.Matches)
+                .Where(matches => matches != null);
+            _Matches = latestMatches
+                .ToProperty(this, x => x.Matches);
 
-            searchTerms.Subscribe(t => Debug.WriteLine(t));
-            //searchResults.Subscribe(r => r.ForEach(t => Debug.WriteLine(t)));
+            searchTerms.Subscribe(x => Debug.WriteLine(x));
         }
 
         public string SearchTerm
