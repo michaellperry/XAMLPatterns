@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.StatefulViewMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ReactiveViewModel", "ViewModel\XAMLPatterns.ReactiveViewModel\XAMLPatterns.ReactiveViewModel.csproj", "{7839BC92-1421-4996-A7CD-7E8790C8BD86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.StatelessViewModel", "XAMLPatterns.StatelessViewModel\XAMLPatterns.StatelessViewModel.csproj", "{852E7C23-9974-4050-B336-094EAE979AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,16 @@ Global
 		{7839BC92-1421-4996-A7CD-7E8790C8BD86}.Release|ARM.ActiveCfg = Release|Any CPU
 		{7839BC92-1421-4996-A7CD-7E8790C8BD86}.Release|x64.ActiveCfg = Release|Any CPU
 		{7839BC92-1421-4996-A7CD-7E8790C8BD86}.Release|x86.ActiveCfg = Release|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Release|x64.ActiveCfg = Release|Any CPU
+		{852E7C23-9974-4050-B336-094EAE979AB5}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -238,5 +250,6 @@ Global
 		{012E0131-0969-40EA-AA34-4EFAC3F78959} = {6A55BFCD-C040-4B99-9852-5F58B47361F9}
 		{788E90FF-F4A3-4E12-84E1-46E498EBD7B5} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
 		{7839BC92-1421-4996-A7CD-7E8790C8BD86} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
+		{852E7C23-9974-4050-B336-094EAE979AB5} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
 	EndGlobalSection
 EndGlobal

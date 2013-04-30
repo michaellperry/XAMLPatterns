@@ -1,8 +1,11 @@
 ﻿<Window x:Class="XAMLPatterns.StatelessViewModel.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="clr-namespace:XAMLPatterns.StatelessViewModel.Views"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel
+        Margin="6">
+        <v:MainView />
+        <v:OtherView />
+    </StackPanel>
 </Window>
