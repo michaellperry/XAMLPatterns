@@ -13,7 +13,11 @@ namespace XAMLPatterns.StatelessViewModel.ViewModels
 
         public string Salutation
         {
-            get { return string.Format("{0}, {1}!", _model.Greeting, _model.Name); }
+            get
+            {
+                return string.Format("{0}, {1}!",
+                    _model.Greeting, _model.Name);
+            }
         }
     }
 }
