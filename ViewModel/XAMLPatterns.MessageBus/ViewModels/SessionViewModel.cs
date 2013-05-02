@@ -9,6 +9,10 @@ namespace XAMLPatterns.MessageBus.ViewModels
         private string _speaker;
         private string _title;
 
+        public SessionViewModel()
+        {
+        }
+
         public string Speaker
         {
             get { return _speaker; }
@@ -40,5 +44,26 @@ namespace XAMLPatterns.MessageBus.ViewModels
                     _selectedSession.Title = value;
             }
         }
+
+        //private void OnSessionSelected(SessionSelected message)
+        //{
+        //    RaisePropertyChanging(() => this.Title);
+        //    RaisePropertyChanging(() => this.Speaker);
+
+        //    _selectedSession = message.Session;
+        //    if (_selectedSession == null)
+        //    {
+        //        _title = string.Empty;
+        //        _speaker = string.Empty;
+        //    }
+        //    else
+        //    {
+        //        _title = _selectedSession.Title;
+        //        _speaker = _selectedSession.Speaker;
+        //    }
+
+        //    RaisePropertyChanged(() => this.Title);
+        //    RaisePropertyChanged(() => this.Speaker);
+        //}
     }
 }

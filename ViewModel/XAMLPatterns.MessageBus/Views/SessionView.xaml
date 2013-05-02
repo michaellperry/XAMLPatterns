@@ -13,12 +13,12 @@
         <TextBlock
             Margin="6,6,6,0"
             FontSize="18"
-            Text="Session:"
+            Text="Title:"
             Foreground="Gray" />
         <TextBox
             Margin="6,0,6,6"
             FontSize="18"
-            Text="{Binding Session}" />
+            Text="{Binding Title}" />
         <TextBlock
             Margin="6,6,6,0"
             FontSize="18"

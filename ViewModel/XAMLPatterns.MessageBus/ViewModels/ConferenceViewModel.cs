@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using GalaSoft.MvvmLight;
-using XAMLPatterns.MessageBus.Messages;
 using XAMLPatterns.MessageBus.Models;
 
 namespace XAMLPatterns.MessageBus.ViewModels
@@ -37,8 +36,6 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 RaisePropertyChanging(() => this.SelectedSession);
                 _selectedSession = value;
                 RaisePropertyChanged(() => this.SelectedSession);
-
-                this.MessengerInstance.Send(new SessionSelected { Session = value });
             }
         }
     }

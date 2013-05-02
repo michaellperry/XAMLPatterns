@@ -1,14 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GalaSoft.MvvmLight;
 
 namespace XAMLPatterns.MessageBus.Models
 {
-    public class Session
+    public class Session : ObservableObject
     {
-        public string Title { get; set; }
-        public string Speaker { get; set; }
+        private string _speaker;
+        private string _title;
+
+        public string Title
+        {
+            get { return _title; }
+            set
+            {
+                if (value == _title)
+                    return;
+
+                RaisePropertyChanging(() => this.Title);
+                _title = value;
+                RaisePropertyChanged(() => this.Title);
+            }
+        }
+
+        public string Speaker
+        {
+            get
+            {
+                return _speaker;
+            }
+            set
+            {
+                if (value == _speaker)
+                    return;
+
+                RaisePropertyChanging(() => this.Speaker);
+                _speaker = value;
+                RaisePropertyChanged(() => this.Speaker);
+            }
+        }
     }
 }
