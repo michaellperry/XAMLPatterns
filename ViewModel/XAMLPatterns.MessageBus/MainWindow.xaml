@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="XAMLPatterns.MessageBus.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:v="clr-namespace:XAMLPatterns.MessageBus.Views"
+    Title="Message Bus"
+    Height="393"
+    Width="717">
+    <Grid
+        Margin="6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="188*" />
+            <ColumnDefinition
+                Width="317*" />
+        </Grid.ColumnDefinitions>
+        <v:ConferenceView />
+        <v:SessionView
+            Grid.Column="1" />
+    </Grid>
+</Window>
