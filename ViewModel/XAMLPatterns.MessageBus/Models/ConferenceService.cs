@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace XAMLPatterns.MessageBus.Models
 {
@@ -46,6 +47,11 @@ namespace XAMLPatterns.MessageBus.Models
         public List<Session> GetSessions()
         {
             return _sessions;
+        }
+
+        public Session LoadSession(int sessionId)
+        {
+            return _sessions.FirstOrDefault(s => s.Id == sessionId);
         }
     }
 }

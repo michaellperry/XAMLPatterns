@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using XAMLPatterns.MessageBus.Messages;
 using XAMLPatterns.MessageBus.Models;
 
 namespace XAMLPatterns.MessageBus.ViewModels
@@ -13,6 +14,14 @@ namespace XAMLPatterns.MessageBus.ViewModels
         public SessionViewModel()
         {
             _conferenceService = new ConferenceService();
+
+            MessengerInstance.Register<SessionSelected>(this, message =>
+            {
+                var session = _conferenceService.LoadSession(message.SessionId);
+                _id = message.SessionId;
+                Speaker = session.Speaker;
+                Title = session.Title;
+            });
         }
 
         public string Speaker
@@ -40,6 +49,12 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 RaisePropertyChanging(() => this.Title);
                 _title = value;
                 RaisePropertyChanged(() => this.Title);
+
+                MessengerInstance.Send(new SessionTitleChanged
+                {
+                    SessionId = _id,
+                    NewTitle = value
+                });
             }
         }
     }

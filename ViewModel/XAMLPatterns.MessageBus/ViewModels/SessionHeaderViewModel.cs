@@ -1,10 +1,20 @@
 using GalaSoft.MvvmLight;
+using XAMLPatterns.MessageBus.Messages;
 
 namespace XAMLPatterns.MessageBus.ViewModels
 {
     public class SessionHeaderViewModel : ViewModelBase
     {
         private string _name;
+
+        public SessionHeaderViewModel()
+        {
+            MessengerInstance.Register<SessionTitleChanged>(this, message =>
+            {
+                if (Id == message.SessionId)
+                    Title = message.NewTitle;
+            });
+        }
 
         public int Id { get; set; }
 
