@@ -8,23 +8,27 @@ namespace XAMLPatterns.MessageBus.ViewModels
     public class ConferenceViewModel : ViewModelBase
     {
         private readonly ConferenceService _conferenceService;
-        private ObservableCollection<Session> _sessions = new ObservableCollection<Session>();
-        private Session _selectedSession = null;
+        private ObservableCollection<SessionHeaderViewModel> _sessions = new ObservableCollection<SessionHeaderViewModel>();
+        private SessionHeaderViewModel _selectedSession = null;
         
         public ConferenceViewModel()
         {
             _conferenceService = new ConferenceService();
 
             foreach (var session in _conferenceService.GetSessions())
-                _sessions.Add(session);
+                _sessions.Add(new SessionHeaderViewModel
+                {
+                    Id = session.Id,
+                    Title = session.Title
+                });
         }
 
-        public IEnumerable<Session> Sessions
+        public IEnumerable<SessionHeaderViewModel> Sessions
         {
             get { return _sessions; }
         }
 
-        public Session SelectedSession
+        public SessionHeaderViewModel SelectedSession
         {
             get { return _selectedSession; }
 

@@ -5,12 +5,14 @@ namespace XAMLPatterns.MessageBus.ViewModels
 {
     public class SessionViewModel : ViewModelBase
     {
-        private Session _selectedSession;
+        private ConferenceService _conferenceService;
+        private int _id;
         private string _speaker;
         private string _title;
 
         public SessionViewModel()
         {
+            _conferenceService = new ConferenceService();
         }
 
         public string Speaker
@@ -24,8 +26,6 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 RaisePropertyChanging(() => this.Speaker);
                 _speaker = value;
                 RaisePropertyChanged(() => this.Speaker);
-                if (_selectedSession != null)
-                    _selectedSession.Speaker = value;
             }
         }
 
@@ -40,30 +40,7 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 RaisePropertyChanging(() => this.Title);
                 _title = value;
                 RaisePropertyChanged(() => this.Title);
-                if (_selectedSession != null)
-                    _selectedSession.Title = value;
             }
         }
-
-        //private void OnSessionSelected(SessionSelected message)
-        //{
-        //    RaisePropertyChanging(() => this.Title);
-        //    RaisePropertyChanging(() => this.Speaker);
-
-        //    _selectedSession = message.Session;
-        //    if (_selectedSession == null)
-        //    {
-        //        _title = string.Empty;
-        //        _speaker = string.Empty;
-        //    }
-        //    else
-        //    {
-        //        _title = _selectedSession.Title;
-        //        _speaker = _selectedSession.Speaker;
-        //    }
-
-        //    RaisePropertyChanged(() => this.Title);
-        //    RaisePropertyChanged(() => this.Speaker);
-        //}
     }
 }

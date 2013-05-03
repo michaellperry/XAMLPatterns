@@ -65,8 +65,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Messages\SessionSelected.cs" />
+    <Compile Include="Messages\SessionTitleChanged.cs" />
     <Compile Include="Models\ConferenceService.cs" />
     <Compile Include="Models\Session.cs" />
+    <Compile Include="ViewModels\SessionHeaderViewModel.cs" />
     <Compile Include="ViewModels\SessionViewModel.cs" />
     <Compile Include="ViewModels\ConferenceViewModel.cs" />
     <Compile Include="Views\SessionView.xaml.cs">
@@ -124,9 +127,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Messages\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

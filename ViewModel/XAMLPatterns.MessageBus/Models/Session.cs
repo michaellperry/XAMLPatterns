@@ -1,41 +1,11 @@
-﻿using GalaSoft.MvvmLight;
+﻿using System;
 
 namespace XAMLPatterns.MessageBus.Models
 {
-    public class Session : ObservableObject
+    public class Session
     {
-        private string _speaker;
-        private string _title;
-
-        public string Title
-        {
-            get { return _title; }
-            set
-            {
-                if (value == _title)
-                    return;
-
-                RaisePropertyChanging(() => this.Title);
-                _title = value;
-                RaisePropertyChanged(() => this.Title);
-            }
-        }
-
-        public string Speaker
-        {
-            get
-            {
-                return _speaker;
-            }
-            set
-            {
-                if (value == _speaker)
-                    return;
-
-                RaisePropertyChanging(() => this.Speaker);
-                _speaker = value;
-                RaisePropertyChanged(() => this.Speaker);
-            }
-        }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Speaker { get; set; }
     }
 }
