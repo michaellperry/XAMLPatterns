@@ -4,7 +4,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using XAMLPatterns.ViewModelEvents.Events;
 
-namespace XAMLPatterns.ViewModelServices.ViewModels
+namespace XAMLPatterns.ViewModelEvents.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {

@@ -1,7 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 
-namespace XAMLPatterns.ViewModelServices.ViewModels
+namespace XAMLPatterns.ViewModelEvents.ViewModels
 {
     public class ViewModelLocator : ViewModelBase
     {
