@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.SelectionModel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ViewModelFirst", "ViewModel\XAMLPatterns.ViewModelFirst\XAMLPatterns.ViewModelFirst.csproj", "{11D202E4-4CB8-4B97-B062-AB74395E498B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ViewModelLocator", "ViewModel\XAMLPatterns.ViewModelLocator\XAMLPatterns.ViewModelLocator.csproj", "{7F258B2F-FC53-4415-8126-B1FC17404EDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,16 @@ Global
 		{11D202E4-4CB8-4B97-B062-AB74395E498B}.Release|ARM.ActiveCfg = Release|Any CPU
 		{11D202E4-4CB8-4B97-B062-AB74395E498B}.Release|x64.ActiveCfg = Release|Any CPU
 		{11D202E4-4CB8-4B97-B062-AB74395E498B}.Release|x86.ActiveCfg = Release|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Release|x64.ActiveCfg = Release|Any CPU
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -290,5 +302,6 @@ Global
 		{4FADE77E-D656-4CFA-81E7-038177E0EF21} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
 		{A5055A2F-C546-4FD3-A4C6-72724080312B} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
 		{11D202E4-4CB8-4B97-B062-AB74395E498B} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
+		{7F258B2F-FC53-4415-8126-B1FC17404EDD} = {FAFB8BD6-8291-48F6-9763-A4A4B034F8D8}
 	EndGlobalSection
 EndGlobal
