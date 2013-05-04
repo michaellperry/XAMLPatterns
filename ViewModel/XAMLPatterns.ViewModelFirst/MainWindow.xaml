@@ -1,0 +1,18 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:v="clr-namespace:XAMLPatterns.ViewModelFirst.Views"
+    x:Class="XAMLPatterns.ViewModelFirst.MainWindow"
+    Title="View Model First"
+    Height="422.9"
+    Width="339">
+    <Grid
+        Margin="6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <v:ConferenceView />
+
+    </Grid>
+</Window>
