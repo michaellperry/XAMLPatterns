@@ -33,15 +33,13 @@ namespace XAMLPatterns.ViewModelEvents.ViewModels
                 return new RelayCommand(delegate
                 {
                     DialogPromptArgs args = new DialogPromptArgs();
-                    args.Message = "Should I increment the count?";
+                    args.Message = "Increment?";
 
                     if (DialogPrompt != null)
                         DialogPrompt(this, args);
 
                     if (args.Confirmed)
-                    {
                         Count++;
-                    }
                 });
             }
         }

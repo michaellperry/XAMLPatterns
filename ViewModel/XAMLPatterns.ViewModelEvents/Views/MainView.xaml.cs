@@ -14,24 +14,26 @@ namespace XAMLPatterns.ViewModelEvents.Views
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            ViewModel.DialogPrompt += DialogPrompt;
+            ViewModel.DialogPrompt += ViewModel_DialogPrompt;
         }
 
         private void UserControl_Unloaded(object sender, RoutedEventArgs e)
         {
-            ViewModel.DialogPrompt -= DialogPrompt;
+            ViewModel.DialogPrompt -= ViewModel_DialogPrompt;
         }
 
-        void DialogPrompt(object sender, DialogPromptArgs args)
+        void ViewModel_DialogPrompt(object sender, DialogPromptArgs args)
         {
-            if (MessageBox.Show(
-                args.Message,
+            args.Confirmed = Prompt(args.Message);
+        }
+
+        private bool Prompt(string message)
+        {
+            return MessageBox.Show(
+                message,
                 "View Services",
                 MessageBoxButton.YesNo) ==
-                MessageBoxResult.Yes)
-            {
-                args.Confirmed = true;
-            }
+                MessageBoxResult.Yes;
         }
 
         private MainViewModel ViewModel

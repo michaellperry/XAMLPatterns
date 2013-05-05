@@ -29,10 +29,9 @@ namespace XAMLPatterns.ViewModelServices.ViewModels
             {
                 return new RelayCommand(delegate
                 {
-                    var dialogService = ViewModelLocator.Current
-                        .GetInstance<IDialogService>();
+                    var dialogService = ViewModelLocator.Current.GetInstance<IDialogService>();
 
-                    if (dialogService.Prompt("Should I increment the count?"))
+                    if (dialogService.Prompt("Increment?"))
                     {
                         Count++;
                     }

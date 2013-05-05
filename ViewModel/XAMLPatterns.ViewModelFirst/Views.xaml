@@ -5,11 +5,11 @@
     xmlns:vm="clr-namespace:XAMLPatterns.ViewModelFirst.ViewModels">
 
     <DataTemplate
-        DataType="{x:Type vm:CommonSessionViewModel}">
-        <v:CommonSessionView />
-    </DataTemplate>
-    <DataTemplate
         DataType="{x:Type vm:BreakoutSessionViewModel}">
         <v:BreakoutSessionView />
+    </DataTemplate>
+    <DataTemplate
+        DataType="{x:Type vm:CommonSessionViewModel}">
+        <v:CommonSessionView />
     </DataTemplate>
 </ResourceDictionary>
