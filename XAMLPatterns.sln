@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.StatefulViewMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ReactiveViewModel", "ViewModel\XAMLPatterns.ReactiveViewModel\XAMLPatterns.ReactiveViewModel.csproj", "{7839BC92-1421-4996-A7CD-7E8790C8BD86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.StatelessViewModel", "XAMLPatterns.StatelessViewModel\XAMLPatterns.StatelessViewModel.csproj", "{852E7C23-9974-4050-B336-094EAE979AB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.StatelessViewModel", "ViewModel\XAMLPatterns.StatelessViewModel\XAMLPatterns.StatelessViewModel.csproj", "{852E7C23-9974-4050-B336-094EAE979AB5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.MessageBus", "ViewModel\XAMLPatterns.MessageBus\XAMLPatterns.MessageBus.csproj", "{4FADE77E-D656-4CFA-81E7-038177E0EF21}"
 EndProject
