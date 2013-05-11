@@ -4,8 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+             d:DesignHeight="350" d:DesignWidth="620">
+    <Grid Background="White">
+    	<Image Margin="28.27,25.346,495.73,196.654" Source="pack://siteoforigin:,,,/Views/Image1.png" Stretch="Fill"/>
+    	<TextBlock HorizontalAlignment="Left" Height="53.616" Margin="146.226,96.286,0,0" TextWrapping="Wrap" Text="Brian Sullivan" VerticalAlignment="Top" Width="361.667" FontSize="18.667"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="146.226,25.346,0,0" TextWrapping="Wrap" Text="REAL-TIME WEB PROGRAMMING WITH SIGNALR" VerticalAlignment="Top" Width="395.786" FontSize="26.667"/>
+    	<TextBlock HorizontalAlignment="Left" Height="159.874" Margin="140.377,155.975,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410.409" FontSize="16"><Run Text="Web programming has always been a one-way conversation; a client calls a server and the server sends a response. But what if you could go the other direction? What if your server could call your client directly? No more inefficient polling. No more waiting for the next server poll to get your data; the server sends it as soon as it has it. Using a variety of techniques behind the scenes to smooth over the rough edges of dealing with variously capable browsers and web servers, SignalR makes real-time client-server communication ridiculously easy. Come see how this new library opens up a ton of possibilities for interactive and collaborative web applications."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+    	<Grid HorizontalAlignment="Left" Height="77.013" Margin="29.245,196.918,0,0" VerticalAlignment="Top" Width="75.063" Background="#FF6E0C0C">
+    		<TextBlock HorizontalAlignment="Left" Height="18.271" Margin="0,10,0,0" TextWrapping="Wrap" Text="The Papasan" VerticalAlignment="Top" Width="75.063" Foreground="White"/>
+    		<TextBlock HorizontalAlignment="Left" Height="23.145" Margin="14.623,43.868,0,0" TextWrapping="Wrap" Text="4:00" VerticalAlignment="Top" Width="36.069" Foreground="White"/>
+    	</Grid>
             
     </Grid>
 </UserControl>
