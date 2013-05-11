@@ -1,8 +1,10 @@
 ﻿<Application x:Class="XAMLPatterns.DesignModeViewModels.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ds="clr-namespace:XAMLPatterns.DesignModeViewModels.DataSources"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ds:DesignModeDataSource
+            x:Key="DS" />
     </Application.Resources>
 </Application>

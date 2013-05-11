@@ -1,0 +1,14 @@
+﻿<ViewModels:TrackViewModel xmlns:ViewModels="clr-namespace:XAMLPatterns.DesignModeViewModels.ViewModels" Name="Maecenas aenean">
+	<ViewModels:TrackViewModel.Sessions>
+		<ViewModels:SessionHeaderViewModel Room="Class" Speaker="Aaberg, Jesper" Time="05/11/2013 18:19:08" Title="Sed aptent"/>
+		<ViewModels:SessionHeaderViewModel Room="Curae" Speaker="Adams, Ellen" Time="05/11/2013 18:19:08" Title="Curabitur auctor aliquet blandit"/>
+		<ViewModels:SessionHeaderViewModel Room="Maecenas" Speaker="Adams, Terry" Time="05/11/2013 18:19:08" Title="Conubia dictumst adipiscing eleifend phasellus"/>
+		<ViewModels:SessionHeaderViewModel Room="Nam" Speaker="Adams, Terry" Time="05/11/2013 18:19:08" Title="Vestibulum dictum vestibulum adipiscing"/>
+		<ViewModels:SessionHeaderViewModel Room="Aliquam" Speaker="Penor, Lori" Time="05/11/2013 18:19:08" Title="Habitant fusce dis"/>
+		<ViewModels:SessionHeaderViewModel Room="Cras" Speaker="Pfeiffer, Michael" Time="05/11/2013 18:19:08" Title="Vestibulum elementum elit"/>
+		<ViewModels:SessionHeaderViewModel Room="Aenean" Speaker="Philips, Carol" Time="05/11/2013 18:19:08" Title="Euismod nascetur"/>
+		<ViewModels:SessionHeaderViewModel Room="Duis" Speaker="Poe, Toni" Time="05/11/2013 18:19:08" Title="Luctus magnis"/>
+		<ViewModels:SessionHeaderViewModel Room="Mauris" Speaker="Hicks, Cassie" Time="05/11/2013 18:19:08" Title="Enim parturient mattis gravida nec"/>
+		<ViewModels:SessionHeaderViewModel Room="Nullam" Speaker="Argentiero, Luca" Time="05/11/2013 18:19:08" Title="Vestibulum lacinia fringilla fames erat"/>
+	</ViewModels:TrackViewModel.Sessions>
+</ViewModels:TrackViewModel>
