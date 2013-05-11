@@ -1,0 +1,14 @@
+﻿<ViewModels:TrackViewModel xmlns:ViewModels="clr-namespace:XAMLPatterns.SampleData.ViewModels" Name="Cras nam">
+	<ViewModels:TrackViewModel.Sessions>
+		<ViewModels:SessionHeaderViewModel Room="Est" Speaker="Aaberg, Jesper" Time="05/11/2013 17:58:52" Title="Praesent vivamus aptent class phasellus"/>
+		<ViewModels:SessionHeaderViewModel Room="Duis" Speaker="Adams, Ellen" Time="05/11/2013 17:58:52" Title="Nam nunc vestibulum"/>
+		<ViewModels:SessionHeaderViewModel Room="Nunc" Speaker="Adams, Terry" Time="05/11/2013 17:58:52" Title="Dis est arcu auctor"/>
+		<ViewModels:SessionHeaderViewModel Room="Hac" Speaker="Adams, Terry" Time="05/11/2013 17:58:52" Title="Parturient hac"/>
+		<ViewModels:SessionHeaderViewModel Room="Aenean" Speaker="Penor, Lori" Time="05/11/2013 17:58:52" Title="Faucibus adipiscing habitant"/>
+		<ViewModels:SessionHeaderViewModel Room="Etiam" Speaker="Pfeiffer, Michael" Time="05/11/2013 17:58:52" Title="Nulla eget proin"/>
+		<ViewModels:SessionHeaderViewModel Room="Mauris" Speaker="Philips, Carol" Time="05/11/2013 17:58:52" Title="Dolor adipiscing per sed"/>
+		<ViewModels:SessionHeaderViewModel Room="Fusce" Speaker="Poe, Toni" Time="05/11/2013 17:58:52" Title="Justo nisl himenaeos conubia lobortis"/>
+		<ViewModels:SessionHeaderViewModel Room="Leo" Speaker="Hicks, Cassie" Time="05/11/2013 17:58:52" Title="Nam nascetur"/>
+		<ViewModels:SessionHeaderViewModel Room="Amet" Speaker="Argentiero, Luca" Time="05/11/2013 17:58:52" Title="Gravida metus morbi lectus nunc"/>
+	</ViewModels:TrackViewModel.Sessions>
+</ViewModels:TrackViewModel>
