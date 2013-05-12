@@ -1,6 +1,7 @@
 ﻿using System;
 using XAMLPatterns.DesignModeModels.Models;
 using XAMLPatterns.DesignModeModels.ViewModels;
+using System.Linq;
 
 namespace XAMLPatterns.DesignModeModels.DataSources
 {
@@ -43,6 +44,16 @@ namespace XAMLPatterns.DesignModeModels.DataSources
                 Room = thePapasan,
                 Time = new DateTime(2013, 3, 15, 10, 30, 0)
             });
+        }
+
+        public TrackViewModel Track
+        {
+            get { return new TrackViewModel(_track); }
+        }
+
+        public SessionViewModel Session
+        {
+            get { return new SessionViewModel(_track.Sessions.FirstOrDefault()); }
         }
     }
 }
