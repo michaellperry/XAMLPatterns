@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Media;
 using XAMLPatterns.ShadowTypes.Models;
 
 namespace XAMLPatterns.ShadowTypes.ViewModels

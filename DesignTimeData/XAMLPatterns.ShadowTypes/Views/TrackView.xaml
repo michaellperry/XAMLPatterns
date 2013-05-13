@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="XAMLPatterns.ShadowTypes.Views.TrackView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DataContext="{Binding Track, Source={StaticResource DS}}"
+             d:DesignHeight="404" d:DesignWidth="482">
+    <UserControl.Resources>
+        <DataTemplate
+            x:Key="SessionItemTemplate">
+            <Grid
+                Width="424">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="Auto" />
+                    <ColumnDefinition
+                        Width="*" />
+                    <ColumnDefinition
+                        Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Rectangle
+                    Fill="#FFF4F4F5"
+                    HorizontalAlignment="Left"
+                    Height="40"
+                    Margin="6"
+                    Stroke="Black"
+                    VerticalAlignment="Top"
+                    Width="35" />
+                <StackPanel
+                    Grid.Column="1">
+                    <TextBlock
+                        TextWrapping="Wrap"
+                        Text="{Binding Title}"
+                        Width="Auto"
+                        Height="Auto"
+                        Margin="6,6,6,0"
+                        FontSize="21.333" />
+                    <TextBlock
+                        Foreground="Gray"
+                        Height="Auto"
+                        TextWrapping="Wrap"
+                        Text="{Binding Speaker}"
+                        Width="Auto"
+                        Margin="6,0,6,6"
+                        FontSize="16" />
+                </StackPanel>
+                <Grid
+                    Grid.Column="2"
+                    HorizontalAlignment="Left"
+                    Height="83"
+                    Margin="6"
+                    VerticalAlignment="Top"
+                    Width="89"
+                    Background="#FF721212">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="27*" />
+                        <RowDefinition
+                            Height="26*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Text="{Binding Room}"
+                        Foreground="White"
+                        FontSize="14.667"
+                        HorizontalAlignment="Center"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        Text="{Binding Time, StringFormat=\{0:h:mm\}}"
+                        Grid.Row="1"
+                        Foreground="White"
+                        FontSize="14.667"
+                        HorizontalAlignment="Center" />
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid
+        Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock
+            HorizontalAlignment="Left"
+            Margin="6"
+            TextWrapping="Wrap"
+            Text="{Binding Name}"
+            VerticalAlignment="Top"
+            FontSize="26.667" />
+        <ListBox
+            ItemTemplate="{DynamicResource SessionItemTemplate}"
+            Grid.Row="1"
+            Margin="6"
+            ItemsSource="{Binding Sessions}">
+        </ListBox>
+
+    </Grid>
+</UserControl>

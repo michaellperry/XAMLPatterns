@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Media;
 using XAMLPatterns.ShadowTypes.Models;
 
 namespace XAMLPatterns.ShadowTypes.ViewModels
@@ -6,10 +7,12 @@ namespace XAMLPatterns.ShadowTypes.ViewModels
     public class SessionViewModel
     {
         private readonly Session _session;
-
-        public SessionViewModel(Session session)
+        private readonly ImageCache _imageCache;
+        
+        public SessionViewModel(Session session, ImageCache imageCache)
         {
             _session = session;
+            _imageCache = imageCache;
         }
 
         public string Title
@@ -20,6 +23,11 @@ namespace XAMLPatterns.ShadowTypes.ViewModels
         public string Speaker
         {
             get { return _session.Speaker.Name; }
+        }
+
+        public ImageSource SpeakerImage
+        {
+            get { return _imageCache.GetImage(_session.Speaker); }
         }
 
         public DateTime Time

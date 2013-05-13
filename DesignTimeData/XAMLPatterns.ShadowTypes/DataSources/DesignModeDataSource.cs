@@ -47,6 +47,7 @@ namespace XAMLPatterns.ShadowTypes.DataSources
                 {
                     Title = "Real-Time Web Programming with SignalR",
                     Speaker = "Brian Sullivan",
+                    SpeakerImage = new Uri("http://cowtowncodecamp.azurewebsites.net/media/4468/BrianSullivan.jpg", UriKind.Absolute),
                     Room = "Room: The Papasan",
                     Time = new DateTime(2013, 3, 15, 16, 0, 0),
                     Description =

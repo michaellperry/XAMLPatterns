@@ -61,9 +61,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\ImageCache.cs" />
     <Compile Include="ViewModels\SessionHeaderViewModel.cs" />
     <Compile Include="ViewModels\SessionViewModel.cs" />
     <Compile Include="ViewModels\TrackViewModel.cs" />
+    <Compile Include="Views\SessionView.xaml.cs">
+      <DependentUpon>SessionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrackView.xaml.cs">
+      <DependentUpon>TrackView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +84,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\SessionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TrackView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Room.cs" />
