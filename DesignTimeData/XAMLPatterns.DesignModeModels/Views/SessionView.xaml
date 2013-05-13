@@ -4,8 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
+             d:DataContext="{Binding Session, Source={StaticResource DS}}"
              d:DesignHeight="350" d:DesignWidth="620">
-    <Grid Background="White" d:DataContext="{d:DesignData /SampleData/SessionViewModelSampleData.xaml}">
+    <Grid Background="White">
     	<Image Margin="28.27,25.346,495.73,196.654" Stretch="Fill"/>
     	<TextBlock HorizontalAlignment="Left" Height="42.903" Margin="140.377,106.999,0,0" TextWrapping="Wrap" Text="{Binding Speaker}" VerticalAlignment="Top" Width="367.516" FontSize="18.667"/>
     	<TextBlock HorizontalAlignment="Left" Margin="140.377,25.346,0,0" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" Width="401.635" FontSize="26.667"/>
