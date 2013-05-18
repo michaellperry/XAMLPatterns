@@ -2,7 +2,6 @@
 using System.Linq;
 using XAMLPatterns.DesignModeModels.Models;
 using XAMLPatterns.DesignModeModels.ViewModels;
-using System.Linq;
 
 namespace XAMLPatterns.DesignModeModels.DataSources
 {
