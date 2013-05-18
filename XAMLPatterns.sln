@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.RelayCommandPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.DependentCommand", "Behavioral\XAMLPatterns.DependentCommand\XAMLPatterns.DependentCommand.csproj", "{5C521025-02EE-4FEC-9959-8A0B074D5322}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ReactiveCommandPattern", "Behavioral\XAMLPatterns.ReactiveCommandPattern\XAMLPatterns.ReactiveCommandPattern.csproj", "{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -421,6 +423,16 @@ Global
 		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|ARM.ActiveCfg = Release|Any CPU
 		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|x64.ActiveCfg = Release|Any CPU
 		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|x86.ActiveCfg = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|x64.ActiveCfg = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -457,5 +469,6 @@ Global
 		{C2232054-D675-4745-87D9-8E90E8262750} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 		{12D2874A-A25E-4CF2-B505-5390ED28049E} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 		{5C521025-02EE-4FEC-9959-8A0B074D5322} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 	EndGlobalSection
 EndGlobal
