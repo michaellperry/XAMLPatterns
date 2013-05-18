@@ -4,9 +4,55 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="300" d:DesignWidth="400">
+    d:DesignHeight="300"
+    d:DesignWidth="547"
+    DataContext="{Binding Main, Source={StaticResource Locator}}">
 
-    <Grid x:Name="LayoutRoot" Background="White">
+    <StackPanel
+        Margin="6"
+        Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Margin="6,12,6,6"
+                VerticalAlignment="Top"
+                FontSize="16"
+                Text="Location:" />
+            <TextBox
+                Grid.Column="1"
+                Margin="6"
+                HorizontalAlignment="Stretch"
+                FontSize="18"
+                Text="{Binding Location, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+        <TextBlock
+            Margin="6"
+            FontSize="22"
+            Foreground="DarkGray"
+            TextWrapping="Wrap">
+            Blah, blah, blabity blah. Lorem ipsum and all that bacon.
+            You agree to some terms that we control and you never even bothered to read.
+            We can change these terms without telling you about it. In fact, we probably
+            already did.
+        </TextBlock>
+        <Grid>
+            <CheckBox
+                Margin="6"
+                VerticalAlignment="Center"
+                IsChecked="{Binding Agree, Mode=TwoWay}"
+                Content="I Agree to the Terms and Conditions" />
+            <Button
+                Margin="6"
+                Padding="3"
+                HorizontalAlignment="Right"
+                FontSize="22"
+                Command="{Binding InstallCommand}"
+                Content="Install" />
 
-    </Grid>
+        </Grid>
+    </StackPanel>
 </UserControl>
