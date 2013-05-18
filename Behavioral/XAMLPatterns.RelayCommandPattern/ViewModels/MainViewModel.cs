@@ -1,6 +1,8 @@
-﻿using System.Windows.Input;
+﻿using System.Diagnostics;
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using XAMLPatterns.RelayCommandPattern.Commands;
 
 namespace XAMLPatterns.RelayCommandPattern.ViewModels
 {
@@ -8,13 +10,11 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
     {
         private string _location;
         private bool _agree;
-        private RelayCommand _installCommand;
+        private InstallCommand _installCommand;
 
         public MainViewModel()
         {
-            _installCommand = new RelayCommand(
-                () => Install(),
-                () => _agree && !string.IsNullOrEmpty(_location));
+            _installCommand = new InstallCommand(this);
         }
 
         public string Location
@@ -28,8 +28,6 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
                 RaisePropertyChanging(() => Location);
                 _location = value;
                 RaisePropertyChanged(() => Location);
-
-                _installCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -44,8 +42,6 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
                 RaisePropertyChanging(() => Agree);
                 _agree = value;
                 RaisePropertyChanged(() => Agree);
-
-                _installCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -56,7 +52,7 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
 
         private void Install()
         {
-            System.Diagnostics.Debug.WriteLine("Installing...");
+            Debug.WriteLine("Installing...");
         }
     }
 }
