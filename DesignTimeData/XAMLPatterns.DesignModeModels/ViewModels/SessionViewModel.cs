@@ -29,7 +29,7 @@ namespace XAMLPatterns.DesignModeModels.ViewModels
 
         public string Room
         {
-            get { return "Room: " + _session.Room.Name; }
+            get { return _session.Room.Name; }
         }
 
         public string Description

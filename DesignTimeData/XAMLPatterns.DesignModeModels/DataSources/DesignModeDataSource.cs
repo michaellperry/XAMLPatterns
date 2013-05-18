@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using XAMLPatterns.DesignModeModels.Models;
 using XAMLPatterns.DesignModeModels.ViewModels;
 using System.Linq;
@@ -53,7 +54,7 @@ namespace XAMLPatterns.DesignModeModels.DataSources
 
         public SessionViewModel Session
         {
-            get { return new SessionViewModel(_track.Sessions.FirstOrDefault()); }
+            get { return new SessionViewModel(_track.Sessions.First()); }
         }
     }
 }
