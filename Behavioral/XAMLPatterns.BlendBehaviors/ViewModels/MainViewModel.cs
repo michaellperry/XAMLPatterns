@@ -18,6 +18,15 @@ namespace XAMLPatterns.BlendBehaviors.ViewModels
         public int Counter
         {
             get { return _counter; }
+            set
+            {
+                if (value == _counter)
+                    return;
+
+                RaisePropertyChanging(() => Counter);
+                _counter = value;
+                RaisePropertyChanged(() => Counter);
+            }
         }
 
         public ICommand IncrementCommand
@@ -27,8 +36,7 @@ namespace XAMLPatterns.BlendBehaviors.ViewModels
 
         private void Increment()
         {
-            _counter++;
-            RaisePropertyChanged(() => Counter);
+            Counter++;
         }
     }
 }

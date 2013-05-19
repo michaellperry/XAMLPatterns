@@ -6,26 +6,28 @@ namespace XAMLPatterns.BlendBehaviors.Behaviors
 {
 	public class ClickBehavior : Behavior<UIElement>
 	{
-		public static DependencyProperty CommandProperty = DependencyProperty.Register(
-			"Command",
-			typeof(ICommand),
-			typeof(ClickBehavior));
-        public static DependencyProperty CountProperty = DependencyProperty.Register(
-            "Count",
-            typeof(int),
-            typeof(ClickBehavior));
-
-		public ICommand Command
-		{
-			get { return (ICommand)GetValue(CommandProperty); }
-			set { SetValue(CommandProperty, value); }
-		}
+        public static DependencyProperty CountProperty =
+            DependencyProperty.Register(
+                "Count",
+                typeof(int),
+                typeof(ClickBehavior));
+        public static DependencyProperty IncrementProperty =
+            DependencyProperty.Register(
+                "Increment",
+                typeof(int),
+                typeof(ClickBehavior));
 
         public int Count
         {
             get { return (int)GetValue(CountProperty); }
             set { SetValue(CountProperty, value); }
         }
+
+		public int Increment
+		{
+			get { return (int)GetValue(IncrementProperty); }
+			set { SetValue(IncrementProperty, value); }
+		}
 
         protected override void OnAttached()
         {
@@ -39,16 +41,9 @@ namespace XAMLPatterns.BlendBehaviors.Behaviors
             base.OnDetaching();
         }
 
-        private void AssociatedObject_MouseDown(object sender, MouseButtonEventArgs e)
+        void AssociatedObject_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            var command = Command;
-            var count = Count;
-
-            if (command != null)
-            {
-                for (int i = 0; i < count; ++i)
-                    command.Execute(null);
-            }
+            Count += Increment;
         }
 	}
 }
