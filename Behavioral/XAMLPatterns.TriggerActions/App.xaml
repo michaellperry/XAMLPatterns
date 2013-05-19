@@ -1,7 +1,7 @@
-﻿<Application x:Class="XAMLPatterns.BlendBehaviors.App"
+﻿<Application x:Class="XAMLPatterns.TriggerActions.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:vm="clr-namespace:XAMLPatterns.BlendBehaviors.ViewModels"
+             xmlns:vm="clr-namespace:XAMLPatterns.TriggerActions.ViewModels"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <vm:ViewModelLocator
