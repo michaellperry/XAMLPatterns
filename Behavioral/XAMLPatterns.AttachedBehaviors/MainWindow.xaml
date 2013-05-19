@@ -16,7 +16,7 @@
             Width="90"
             Height="90"
             Fill="Blue"
-            b:ClickBehavior.Command="{Binding IncrementCommand}" />
+            b:ClickBehavior.Command="{Binding IncrementCommand}"/>
         <Button
             Margin="6"
             Command="{Binding IncrementCommand}"
