@@ -15,19 +15,18 @@ namespace XAMLPatterns.ReactiveCommandPattern.ViewModels
 
         public MainViewModel()
         {
-            var locationStream = this
+            var locationEvents = this
                 .ObservableForProperty(_ => _.Location)
                 .Value();
-            var agreeStream = this
+            var agreeEvents = this
                 .ObservableForProperty(_ => _.Agree)
                 .Value();
-            var canInstall = locationStream.CombineLatest(agreeStream,
-                (location, agree) => !string.IsNullOrEmpty(location) && agree);
-
+            var canExecuteStream = locationEvents.CombineLatest(agreeEvents,
+                (l, a) => !string.IsNullOrEmpty(l) && a);
             _installCommand = new ReactiveCommand(
-                canExecute: canInstall,
+                canExecute: canExecuteStream,
                 initialCondition: false);
-            _installCommand.Subscribe(x => Install());
+            _installCommand.Subscribe(e => Install());
         }
 
         public string Location

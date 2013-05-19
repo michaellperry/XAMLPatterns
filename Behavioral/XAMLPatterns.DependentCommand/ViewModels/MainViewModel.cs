@@ -31,7 +31,8 @@ namespace XAMLPatterns.DependentCommand.ViewModels
             get
             {
                 return MakeCommand
-                    .When(() => !string.IsNullOrEmpty(Location) && Agree)
+                    .When(() => !string.IsNullOrEmpty(Location)
+                        && Agree)
                     .Do(() => Install());
             }
         }
