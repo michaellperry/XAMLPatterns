@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XAMLPatterns.AttachedProperties.Properties
+namespace XAMLPatterns.AttachedBehaviors.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace XAMLPatterns.AttachedProperties.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("XAMLPatterns.AttachedProperties.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("XAMLPatterns.AttachedBehaviors.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

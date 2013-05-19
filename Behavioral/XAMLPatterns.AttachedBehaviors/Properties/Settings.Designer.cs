@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XAMLPatterns.AttachedProperties.Properties
+namespace XAMLPatterns.AttachedBehaviors.Properties
 {
 
 
