@@ -2,8 +2,9 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:b="clr-namespace:XAMLPatterns.AttachedBehaviors.Behaviors"
-        Title="Attached Behaviors" Height="350" Width="525"
-        DataContext="{Binding Main, Source={StaticResource Locator}}">
+        Title="Attached Behaviors" Height="350"
+    Width="270.146"
+    DataContext="{Binding Main, Source={StaticResource Locator}}">
     <StackPanel
         Margin="6"
         HorizontalAlignment="Left">

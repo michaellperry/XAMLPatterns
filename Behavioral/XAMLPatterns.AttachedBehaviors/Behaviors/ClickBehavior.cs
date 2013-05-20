@@ -26,17 +26,10 @@ namespace XAMLPatterns.AttachedBehaviors.Behaviors
             DependencyObject d,
             DependencyPropertyChangedEventArgs e)
         {
-            var component = d as UIElement;
-            if (component != null)
+            var uiElement = d as UIElement;
+            if (uiElement != null)
             {
-                if (e.OldValue == null && e.NewValue != null)
-                {
-                    component.MouseDown += UIElement_MouseDown;
-                }
-                if (e.OldValue != null && e.NewValue == null)
-                {
-                    component.MouseDown -= UIElement_MouseDown;
-                }
+                uiElement.MouseDown += UIElement_MouseDown;
             }
         }
 
@@ -44,15 +37,9 @@ namespace XAMLPatterns.AttachedBehaviors.Behaviors
             object sender,
             MouseButtonEventArgs e)
         {
-            var component = sender as UIElement;
-            if (component != null)
-            {
-                var command = GetCommand(component);
-                if (command != null && command.CanExecute(null))
-                {
-                    command.Execute(null);
-                }
-            }
+            var command = GetCommand((DependencyObject)sender);
+            if (command != null && command.CanExecute(null))
+                command.Execute(null);
         }
     }
 }
