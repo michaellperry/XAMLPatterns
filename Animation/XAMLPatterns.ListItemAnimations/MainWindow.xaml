@@ -1,0 +1,34 @@
+﻿<Window
+    x:Class="XAMLPatterns.ListItemAnimations.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow"
+    Height="350"
+    Width="525"
+    DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid
+        Margin="6">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition
+                Height="Auto" />
+        </Grid.RowDefinitions>
+        <ListBox
+            Margin="6"
+            FontSize="18"
+            ItemsSource="{Binding Numbers}"
+            SelectedItem="{Binding SelectedNumber, Mode=TwoWay}"/>
+        <StackPanel
+            Grid.Row="1"
+            Orientation="Horizontal">
+            <Button
+                Margin="6"
+                FontSize="22"
+                Command="{Binding NewNumber}" Width="165">New Number</Button>
+            <Button
+                Margin="6"
+                FontSize="22"
+                Command="{Binding DeleteNumber}" Width="165">Delete Number</Button>
+        </StackPanel>
+    </Grid>
+</Window>
