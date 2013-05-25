@@ -7,6 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     DataContext="{Binding Main, Source={StaticResource Locator}}">
+	<Page.Resources>
+		<DataTemplate x:Key="NumberItemTemplate">
+			<Grid>
+				<TextBlock Margin="10" Text="{Binding Mode=OneWay}"/>
+			</Grid>
+		</DataTemplate>
+	</Page.Resources>
 
     <Grid
         Margin="6"
@@ -16,11 +23,13 @@
             <RowDefinition
                 Height="Auto" />
         </Grid.RowDefinitions>
-        <ListView
+        <ListBox
             Margin="6"
             FontSize="18"
             ItemsSource="{Binding Numbers}"
-            SelectedItem="{Binding SelectedNumber, Mode=TwoWay}" />
+            SelectedItem="{Binding SelectedNumber, Mode=TwoWay}"
+            ItemTemplate="{StaticResource NumberItemTemplate}" Background="White" >
+        </ListBox>
         <StackPanel
             Grid.Row="1"
             Orientation="Horizontal">
