@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.TargetedTrigge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.VisualStateBinding", "Animation\XAMLPatterns.VisualStateBinding\XAMLPatterns.VisualStateBinding.csproj", "{9B326288-B0F6-4D89-B399-958F72B034F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.CircularAnimations", "Animation\XAMLPatterns.CircularAnimations\XAMLPatterns.CircularAnimations.csproj", "{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -469,6 +471,16 @@ Global
 		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|ARM.ActiveCfg = Release|Any CPU
 		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|x64.ActiveCfg = Release|Any CPU
 		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -509,5 +521,6 @@ Global
 		{A1F1C578-91CA-41CA-A69C-6525954CC969} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 		{9B326288-B0F6-4D89-B399-958F72B034F9} = {A16946FF-47A9-4A9D-B493-90B99D34DC05}
+		{E5FEFA91-C7EF-4690-9CAB-BA7E5BE2FF8D} = {A16946FF-47A9-4A9D-B493-90B99D34DC05}
 	EndGlobalSection
 EndGlobal

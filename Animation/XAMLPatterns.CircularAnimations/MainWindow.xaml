@@ -1,0 +1,196 @@
+﻿<Window
+    x:Class="XAMLPatterns.CircularAnimations.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:Behaviors="clr-namespace:XAMLPatterns.CircularAnimations.Behaviors"
+    Title="Circular Animations"
+    Height="427"
+    Width="414"
+    DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition
+                Height="Auto"
+                MinHeight="0" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="*" />
+            <ColumnDefinition
+                Width="Auto"
+                MinWidth="0" />
+            <ColumnDefinition
+                Width="*" />
+        </Grid.ColumnDefinitions>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup
+                x:Name="CompassPoints">
+                <VisualStateGroup.Transitions>
+                    <VisualTransition
+                        GeneratedDuration="0:0:0.6">
+                        <VisualTransition.GeneratedEasingFunction>
+                            <ElasticEase
+                                EasingMode="EaseOut"
+                                Springiness="4" />
+                        </VisualTransition.GeneratedEasingFunction>
+                    </VisualTransition>
+                    <VisualTransition From="South" GeneratedDuration="0:0:0.6" To="West">
+                    	<VisualTransition.GeneratedEasingFunction>
+                    		<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    	</VisualTransition.GeneratedEasingFunction>
+                    	<Storyboard>
+                    		<DoubleAnimation Duration="0:0:0.6" To="270" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
+                    			<DoubleAnimation.EasingFunction>
+                    				<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    			</DoubleAnimation.EasingFunction>
+                    		</DoubleAnimation>
+                        </Storyboard>
+                    </VisualTransition>
+                    <VisualTransition From="West" GeneratedDuration="0:0:0.6" To="South">
+                    	<VisualTransition.GeneratedEasingFunction>
+                    		<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    	</VisualTransition.GeneratedEasingFunction>
+                    	<Storyboard>
+                    		<DoubleAnimation Duration="0:0:0.6" To="-180" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
+                    			<DoubleAnimation.EasingFunction>
+                    				<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    			</DoubleAnimation.EasingFunction>
+                    		</DoubleAnimation>
+                    	</Storyboard>
+                    </VisualTransition>
+                </VisualStateGroup.Transitions>
+                <VisualState
+                    x:Name="North" />
+                <VisualState
+                    x:Name="South">
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames
+                            Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)"
+                            Storyboard.TargetName="path">
+                            <EasingDoubleKeyFrame
+                                KeyTime="0"
+                                Value="180" />
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState
+                    x:Name="East">
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames
+                            Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)"
+                            Storyboard.TargetName="path">
+                            <EasingDoubleKeyFrame
+                                KeyTime="0"
+                                Value="90" />
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState
+                    x:Name="West">
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames
+                            Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)"
+                            Storyboard.TargetName="path">
+                            <EasingDoubleKeyFrame
+                                KeyTime="0"
+                                Value="-90" />
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <VisualStateManager.CustomVisualStateManager>
+            <ei:ExtendedVisualStateManager />
+        </VisualStateManager.CustomVisualStateManager>
+        <Ellipse
+            x:Name="ellipse"
+            Fill="#FFF4F4F5"
+            HorizontalAlignment="Center"
+            Height="200.466"
+            Stroke="Black"
+            VerticalAlignment="Center"
+            Width="200.466"
+            Grid.Column="1"
+            Grid.Row="1"
+            Margin="6" />
+        <Path
+            x:Name="path"
+            Data="M174,137 L205.5,79.5 229,135.25 212.25,129.75 211,228 191.5,226.75 194.25,129.75 z"
+            Fill="#FFBBBB22"
+            HorizontalAlignment="Center"
+            Height="149.5"
+            Stretch="Fill"
+            Stroke="Black"
+            VerticalAlignment="Center"
+            Width="56"
+            RenderTransformOrigin="0.5,0.5"
+            Grid.Column="1"
+            Grid.Row="1"
+            Margin="6">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Path.RenderTransform>
+            <i:Interaction.Behaviors>
+                <Behaviors:BindVisualStateBehavior
+                    StateName="{Binding Direction}" />
+            </i:Interaction.Behaviors>
+        </Path>
+        <Button
+            Content="North"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,6"
+            Width="60"
+            Grid.Column="1"
+            VerticalAlignment="Bottom"
+            Height="60"
+            Command="{Binding North}" />
+        <Button
+            Content="South"
+            HorizontalAlignment="Center"
+            Margin="0,6,0,0"
+            VerticalAlignment="Top"
+            Width="60"
+            Grid.Column="1"
+            Grid.Row="2"
+            Height="60"
+            Command="{Binding South, Mode=OneWay}" />
+        <Button
+            Content="West"
+            Margin="0,0,6,0"
+            VerticalAlignment="Center"
+            Grid.Row="1"
+            RenderTransformOrigin="0.5,0.5"
+            HorizontalAlignment="Right"
+            Width="60"
+            Height="60"
+            Command="{Binding West, Mode=OneWay}">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button
+            Content="East"
+            HorizontalAlignment="Left"
+            Margin="6,0,0,0"
+            VerticalAlignment="Center"
+            Width="60"
+            Grid.Column="2"
+            Grid.Row="1"
+            Height="60"
+            Command="{Binding East, Mode=OneWay}" />
+    </Grid>
+</Window>
