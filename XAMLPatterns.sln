@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.TriggerActions
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.TargetedTriggerActions", "Behavioral\XAMLPatterns.TargetedTriggerActions\XAMLPatterns.TargetedTriggerActions.csproj", "{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.VisualStateBinding", "Animation\XAMLPatterns.VisualStateBinding\XAMLPatterns.VisualStateBinding.csproj", "{9B326288-B0F6-4D89-B399-958F72B034F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -457,6 +459,16 @@ Global
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Release|ARM.ActiveCfg = Release|Any CPU
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Release|x64.ActiveCfg = Release|Any CPU
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B326288-B0F6-4D89-B399-958F72B034F9}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -496,5 +508,6 @@ Global
 		{19E03D1F-C477-4443-A545-C4F2784C2025} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 		{A1F1C578-91CA-41CA-A69C-6525954CC969} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463} = {F56B7A8F-B45C-422B-A01B-2BB6A5D3962A}
+		{9B326288-B0F6-4D89-B399-958F72B034F9} = {A16946FF-47A9-4A9D-B493-90B99D34DC05}
 	EndGlobalSection
 EndGlobal
