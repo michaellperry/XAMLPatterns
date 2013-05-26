@@ -33,31 +33,26 @@
                     <VisualTransition
                         GeneratedDuration="0:0:0.6">
                         <VisualTransition.GeneratedEasingFunction>
-                            <ElasticEase
-                                EasingMode="EaseOut"
-                                Springiness="4" />
+                        	<BackEase EasingMode="EaseOut"/>
                         </VisualTransition.GeneratedEasingFunction>
                     </VisualTransition>
                     <VisualTransition From="South" GeneratedDuration="0:0:0.6" To="West">
                     	<VisualTransition.GeneratedEasingFunction>
-                    		<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    		<BackEase EasingMode="EaseOut"/>
                     	</VisualTransition.GeneratedEasingFunction>
                     	<Storyboard>
                     		<DoubleAnimation Duration="0:0:0.6" To="270" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
                     			<DoubleAnimation.EasingFunction>
-                    				<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    				<BackEase EasingMode="EaseOut"/>
                     			</DoubleAnimation.EasingFunction>
                     		</DoubleAnimation>
-                        </Storyboard>
+                    	</Storyboard>
                     </VisualTransition>
                     <VisualTransition From="West" GeneratedDuration="0:0:0.6" To="South">
-                    	<VisualTransition.GeneratedEasingFunction>
-                    		<ElasticEase EasingMode="EaseOut" Springiness="4"/>
-                    	</VisualTransition.GeneratedEasingFunction>
                     	<Storyboard>
                     		<DoubleAnimation Duration="0:0:0.6" To="-180" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
                     			<DoubleAnimation.EasingFunction>
-                    				<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+                    				<BackEase EasingMode="EaseOut"/>
                     			</DoubleAnimation.EasingFunction>
                     		</DoubleAnimation>
                     	</Storyboard>
