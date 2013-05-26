@@ -10,8 +10,7 @@ namespace XAMLPatterns.VisualStateBinding.Behaviors
 			"StateName",
 			typeof(string),
 			typeof(BindVisualStateBehavior),
-			new PropertyMetadata(VisualStatePropertyChanged));
-		private bool _initialized = false;
+			new PropertyMetadata(StateNamePropertyChanged));
 
 		public string StateName
 		{
@@ -19,29 +18,37 @@ namespace XAMLPatterns.VisualStateBinding.Behaviors
 			set { SetValue(StateNameProperty, value); }
 		}
 
-		public void UpdateVisualState(string visualState)
+		private static void StateNamePropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
 		{
-			if (AssociatedObject != null)
-			{
-				FrameworkElement stateTarget;
-				if (VisualStateUtilities.TryFindNearestStatefulControl(AssociatedObject, out stateTarget))
-				{
-					bool useTransitions = _initialized;
-					VisualStateUtilities.GoToState(stateTarget, visualState, useTransitions);
-					_initialized = true;
-				}
-			}
+			((BindVisualStateBehavior)obj).UpdateVisualState(
+                (string)args.NewValue,
+                useTransitions: true);
 		}
 
         protected override void OnAttached()
         {
-            UpdateVisualState(StateName);
+            UpdateVisualState(
+                StateName,
+                useTransitions: false);
             base.OnAttached();
         }
 
-		private static void VisualStatePropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+		private void UpdateVisualState(
+            string visualState,
+            bool useTransitions)
 		{
-			((BindVisualStateBehavior)obj).UpdateVisualState((string)args.NewValue);
+			if (AssociatedObject != null)
+			{
+				FrameworkElement stateTarget;
+				if (VisualStateUtilities.TryFindNearestStatefulControl(
+                    AssociatedObject, out stateTarget))
+				{
+					VisualStateUtilities.GoToState(
+                        stateTarget,
+                        visualState,
+                        useTransitions);
+				}
+			}
 		}
 	}
 }

@@ -8,22 +8,12 @@
         Title="Visual State Binding" Height="431.898" Width="484.051"
         DataContext="{Binding Main, Source={StaticResource Locator}}">
     <Grid>
-    	<Grid.RowDefinitions>
-    		<RowDefinition Height="28*"/>
-    		<RowDefinition Height="Auto" MinHeight="0"/>
-    		<RowDefinition Height="27*"/>
-    	</Grid.RowDefinitions>
-    	<Grid.ColumnDefinitions>
-    		<ColumnDefinition Width="*"/>
-    		<ColumnDefinition Width="Auto" MinWidth="0"/>
-    		<ColumnDefinition Width="*"/>
-    	</Grid.ColumnDefinitions>
     	<VisualStateManager.VisualStateGroups>
     		<VisualStateGroup x:Name="CompassPoints">
     			<VisualStateGroup.Transitions>
     				<VisualTransition GeneratedDuration="0:0:0.6">
     					<VisualTransition.GeneratedEasingFunction>
-    						<ElasticEase EasingMode="EaseOut" Springiness="4"/>
+    						<BackEase EasingMode="EaseOut"/>
     					</VisualTransition.GeneratedEasingFunction>
     				</VisualTransition>
     			</VisualStateGroup.Transitions>
@@ -51,11 +41,21 @@
     			</VisualState>
     		</VisualStateGroup>
     	</VisualStateManager.VisualStateGroups>
-    	<VisualStateManager.CustomVisualStateManager>
-    		<ei:ExtendedVisualStateManager/>
-    	</VisualStateManager.CustomVisualStateManager>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="28*"/>
+    		<RowDefinition Height="Auto" MinHeight="0"/>
+    		<RowDefinition Height="27*"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="*"/>
+    		<ColumnDefinition Width="Auto" MinWidth="0"/>
+    		<ColumnDefinition Width="*"/>
+    	</Grid.ColumnDefinitions>
     	<Ellipse x:Name="ellipse" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="200.466" Stroke="Black" VerticalAlignment="Center" Width="200.466" Grid.Column="1" Grid.Row="1" Margin="6"/>
     	<Path x:Name="path" Data="M174,137 L205.5,79.5 229,135.25 212.25,129.75 211,228 191.5,226.75 194.25,129.75 z" Fill="#FFBBBB22" HorizontalAlignment="Center" Height="149.5" Stretch="Fill" Stroke="Black" VerticalAlignment="Center" Width="56" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1" Margin="6">
+    		<i:Interaction.Behaviors>
+    			<Behaviors:BindVisualStateBehavior StateName="{Binding Direction}"/>
+    		</i:Interaction.Behaviors>
     		<Path.RenderTransform>
     			<TransformGroup>
     				<ScaleTransform/>
@@ -64,9 +64,6 @@
     				<TranslateTransform/>
     			</TransformGroup>
     		</Path.RenderTransform>
-    		<i:Interaction.Behaviors>
-    			<Behaviors:BindVisualStateBehavior StateName="{Binding Direction}"/>
-    		</i:Interaction.Behaviors>
     	</Path>
     	<Button Content="North" HorizontalAlignment="Center" Margin="0,0,0,6" Width="60" Grid.Column="1" VerticalAlignment="Bottom" Height="60" Command="{Binding North}"/>
     	<Button Content="South" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="2" Height="60" Command="{Binding South, Mode=OneWay}"/>
