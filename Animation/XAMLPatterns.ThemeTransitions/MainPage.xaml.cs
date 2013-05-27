@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using XAMLPatterns_ThemeTransitions.Common;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -19,7 +20,7 @@ namespace XAMLPatterns.ThemeTransitions
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage : LayoutAwarePage
     {
         public MainPage()
         {
@@ -33,6 +34,11 @@ namespace XAMLPatterns.ThemeTransitions
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private void Forward_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ItemDetailPage));
         }
     }
 }
