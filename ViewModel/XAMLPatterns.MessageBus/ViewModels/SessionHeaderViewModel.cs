@@ -9,6 +9,11 @@ namespace XAMLPatterns.MessageBus.ViewModels
 
         public SessionHeaderViewModel()
         {
+            //
+            // XAML Patterns (4.5):
+            //
+            // When a SessionTitleChanged message is received, update the title.
+            //
             MessengerInstance.Register<SessionTitleChanged>(this, message =>
             {
                 if (Id == message.SessionId)

@@ -29,6 +29,12 @@ namespace XAMLPatterns.ViewModelServices.ViewModels
             {
                 return new RelayCommand(delegate
                 {
+                    //
+                    // XAML Patterns (4.9):
+                    //
+                    // Get the dialog service from the IoC container through
+                    // the view model locator.
+                    //
                     var dialogService = ViewModelLocator.Current.GetInstance<IDialogService>();
 
                     if (dialogService.Prompt("Increment?"))

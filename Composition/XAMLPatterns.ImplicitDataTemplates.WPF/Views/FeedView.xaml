@@ -11,6 +11,9 @@
     d:DesignHeight="300"
     d:DesignWidth="300" DataContext="{StaticResource Sample.Activity}">
     <UserControl.Resources>
+        <!-- XAML Patterns (3.10): -->
+        <!-- Set the DataType property of the data template to apply it to -->
+        <!-- all items implicitly by bound type. This only works in WPF. -->
         <DataTemplate
             DataType="{x:Type m:BusinessDevelopmentActivity}">
             <c:BusinessDevelopmentActivityControl />

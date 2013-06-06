@@ -6,6 +6,11 @@ namespace XAMLPatterns.ImplicitDataTemplates.SL.Selectors
 {
     public class ImplicitDataTemplateControl : ContentControl
     {
+        //
+        // XAML Patterns (3.10):
+        //
+        // When the content changes, select a data template based on its type.
+        //
         protected override void OnContentChanged(object oldContent, object newContent)
         {
             ContentTemplate = SelectTemplateCore(newContent, this);

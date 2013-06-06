@@ -8,6 +8,8 @@
     mc:Ignorable="d"
     d:DesignHeight="300" d:DesignWidth="400">
 	<UserControl.Resources>
+        <!-- XAML Patterns (7.4): -->
+        <!-- Blend makes a copy of the default template of the control. -->
 		<Style x:Key="ButtonStyle1" TargetType="Button">
 			<Setter Property="Background" Value="#FF1F3B53"/>
 			<Setter Property="Foreground" Value="#FF000000"/>

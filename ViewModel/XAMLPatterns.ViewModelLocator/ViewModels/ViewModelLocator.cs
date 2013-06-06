@@ -15,6 +15,11 @@ namespace XAMLPatterns.ViewModelLocator.ViewModels
             _container.Register<SessionViewModel>();
         }
 
+        //
+        // XAML Patterns (4.7):
+        //
+        // Each property of the view model locator is a different view model.
+        //
         public ConferenceViewModel Conference
         {
             get { return _container.GetInstance<ConferenceViewModel>(); }

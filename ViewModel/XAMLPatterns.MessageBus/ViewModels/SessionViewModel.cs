@@ -15,6 +15,11 @@ namespace XAMLPatterns.MessageBus.ViewModels
         {
             _conferenceService = new ConferenceService();
 
+            //
+            // XAML Patterns (4.5):
+            //
+            // When the SessionSelected message is received, load the session.
+            //
             MessengerInstance.Register<SessionSelected>(this, message =>
             {
                 var session = _conferenceService.LoadSession(message.SessionId);
@@ -50,6 +55,11 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 _title = value;
                 RaisePropertyChanged(() => this.Title);
 
+                //
+                // XAML Patterns (4.5):
+                //
+                // Send a SessionTitleChanged message to anybody listening.
+                //
                 MessengerInstance.Send(new SessionTitleChanged
                 {
                     SessionId = _id,

@@ -18,6 +18,14 @@ namespace XAMLPatterns.ReactiveViewModel.ViewModels
         {
             _searchService = new SearchService();
 
+            //
+            // XAML Patterns (4.3):
+            //
+            // When the search term has not changed for half a second,
+            // asynchronously perform the search. Take the result
+            // for the latest search, and expose that as the Matches
+            // property.
+            //
             var searchTerms = this
                 .ObservableForProperty(x => x.SearchTerm)
                 .Value()

@@ -19,6 +19,8 @@
     <Grid
         Margin="6"
         Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <!-- XAML Patterns (7.6): -->
+        <!-- ChildrenTransitions applies a transition to all direct children. -->
     	<Grid.ChildrenTransitions>
     		<TransitionCollection>
     			<EntranceThemeTransition/>
@@ -30,6 +32,8 @@
             <RowDefinition
                 Height="Auto" />
         </Grid.RowDefinitions>
+        <!-- XAML Patterns (7.6): -->
+        <!-- ListView comes with an AddDeleteThemeTransition by default. -->
         <ListView
             Margin="6"
             FontSize="18"

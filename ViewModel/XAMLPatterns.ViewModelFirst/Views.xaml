@@ -4,6 +4,8 @@
     xmlns:v="clr-namespace:XAMLPatterns.ViewModelFirst.Views"
     xmlns:vm="clr-namespace:XAMLPatterns.ViewModelFirst.ViewModels">
 
+    <!-- XAML Patterns (4.8): -->
+    <!-- Register each view as the data template for its associated view model. -->
     <DataTemplate
         DataType="{x:Type vm:BreakoutSessionViewModel}">
         <v:BreakoutSessionView />

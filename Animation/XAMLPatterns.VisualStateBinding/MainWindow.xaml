@@ -53,6 +53,8 @@
     	</Grid.ColumnDefinitions>
     	<Ellipse x:Name="ellipse" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="200.466" Stroke="Black" VerticalAlignment="Center" Width="200.466" Grid.Column="1" Grid.Row="1" Margin="6"/>
     	<Path x:Name="path" Data="M174,137 L205.5,79.5 229,135.25 212.25,129.75 211,228 191.5,226.75 194.25,129.75 z" Fill="#FFBBBB22" HorizontalAlignment="Center" Height="149.5" Stretch="Fill" Stroke="Black" VerticalAlignment="Center" Width="56" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1" Margin="6">
+            <!-- XAML Patterns (7.2): -->
+            <!-- The visual state is attached to an element, and bound to the enumeration. -->
     		<i:Interaction.Behaviors>
     			<Behaviors:BindVisualStateBehavior StateName="{Binding Direction}"/>
     		</i:Interaction.Behaviors>

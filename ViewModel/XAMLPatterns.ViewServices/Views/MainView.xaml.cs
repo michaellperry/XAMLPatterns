@@ -23,11 +23,22 @@ namespace XAMLPatterns.ViewServices.Views
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
+            //
+            // XAML Patterns (4.9):
+            //
+            // Register as providing the dialog service with the IoC container
+            // through the view model locator.
+            //
             ViewModelLocator.Current.Register<IDialogService>(this);
         }
 
         private void UserControl_Unloaded(object sender, RoutedEventArgs e)
         {
+            //
+            // XAML Patterns (4.9):
+            //
+            // Clean up after yourself.
+            //
             ViewModelLocator.Current.Unregister<IDialogService>();
         }
     }

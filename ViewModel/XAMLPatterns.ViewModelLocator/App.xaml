@@ -4,6 +4,9 @@
              xmlns:vm="clr-namespace:XAMLPatterns.ViewModelLocator.ViewModels"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <!-- XAML Patterns (4.7): -->
+        <!-- Add the view model locator to the resource dictionary -->
+        <!-- so that every view can have access to it. -->
         <vm:ViewModelLocator
             x:Key="Locator" />
     </Application.Resources>

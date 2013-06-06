@@ -22,6 +22,13 @@ namespace XAMLPatterns.SelectionModel.ViewModels
             get { return _session.Title; }
         }
 
+        //
+        // XAML Patterns (4.6):
+        //
+        // The header view model must implement Equals and
+        // GetHashCode so that the selected item appears as
+        // equal to one of the items in the list.
+        //
         public override bool Equals(object obj)
         {
             if (obj == this)

@@ -27,6 +27,13 @@ namespace XAMLPatterns.SelectionModel.ViewModels
             }
         }
 
+        //
+        // XAML Patterns (4.6):
+        //
+        // When the user selects a SessionHeaderViewModel from the list
+        // of Sessions, get the Session out of it and store it in the
+        // SessionSelectionModel.
+        //
         public SessionHeaderViewModel SelectedSession
         {
             get

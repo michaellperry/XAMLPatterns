@@ -11,6 +11,13 @@ namespace XAMLPatterns.StatelessViewModel.ViewModels
             _model = model;            
         }
 
+        //
+        // XAML Patterns (4.4):
+        //
+        // A computed property can access multiple properties
+        // of the model. Salutation depends upon both Greeting
+        // and Name.
+        //
         public string Salutation
         {
             get

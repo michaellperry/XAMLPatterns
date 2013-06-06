@@ -42,6 +42,11 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 _selectedSession = value;
                 RaisePropertyChanged(() => this.SelectedSession);
 
+                //
+                // XAML Patterns (4.5):
+                //
+                // Send a SessionSelected message to anybody listening.
+                //
                 MessengerInstance.Send(new SessionSelected
                 {
                     SessionId = value.Id

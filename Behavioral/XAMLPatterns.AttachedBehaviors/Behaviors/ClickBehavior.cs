@@ -5,6 +5,11 @@ namespace XAMLPatterns.AttachedBehaviors.Behaviors
 {
     public static class ClickBehavior
     {
+        //
+        // XAML Patterns (6.5):
+        //
+        // Attached property to give us a hook to access a control.
+        //
         public static DependencyProperty CommandProperty =
             DependencyProperty.RegisterAttached(
                 "Command",
@@ -22,6 +27,12 @@ namespace XAMLPatterns.AttachedBehaviors.Behaviors
             obj.SetValue(CommandProperty, value);
         }
 
+        //
+        // XAML Patterns (6.5):
+        //
+        // When the attached property "changes", it has been attached.
+        // Register for the mouse down event.
+        //
         private static void CommandPropertyChanged(
             DependencyObject d,
             DependencyPropertyChangedEventArgs e)
@@ -33,6 +44,11 @@ namespace XAMLPatterns.AttachedBehaviors.Behaviors
             }
         }
 
+        //
+        // XAML Patterns (6.5):
+        //
+        // Get the command that has been bound to the property, and execute it.
+        //
         private static void UIElement_MouseDown(
             object sender,
             MouseButtonEventArgs e)

@@ -32,6 +32,12 @@ namespace XAMLPatterns.ViewModelEvents.ViewModels
             {
                 return new RelayCommand(delegate
                 {
+                    //
+                    // XAML Patterns (4.10):
+                    //
+                    // Fire an event to give the attached view a chance to
+                    // display the prompt and set Confirmed.
+                    //
                     DialogPromptArgs args = new DialogPromptArgs();
                     args.Message = "Increment?";
 

@@ -7,6 +7,9 @@
              mc:Ignorable="d"
              DataContext="{Binding Session, Source={StaticResource Locator}}"
              d:DesignHeight="300" d:DesignWidth="300">
+    <!-- XAML Patterns (4.7): -->
+    <!-- The DataContext was data bound above to the -->
+    <!-- Session property of the view model locator. -->
     <StackPanel>
         <TextBlock
             Margin="6,6,6,0"

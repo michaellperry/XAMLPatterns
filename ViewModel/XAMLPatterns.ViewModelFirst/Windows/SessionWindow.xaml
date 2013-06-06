@@ -4,6 +4,9 @@
         Title="SessionWindow" Height="300" Width="300"
     Unloaded="Window_Unloaded">
     <Grid Margin="6">
+        <!-- XAML Patterns (4.8): -->
+        <!-- The ContentControl will implicitly select the data template -->
+        <!-- based on the type of the content. -->
         <ContentControl
             x:Name="SessionContent" />
     </Grid>

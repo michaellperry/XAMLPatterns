@@ -2,8 +2,18 @@
 
 namespace XAMLPatterns.StatefulViewModel.ViewModels
 {
+    //
+    // XAML Patterns (4.2):
+    //
+    // Inherit a base class that implements INotifyPropertyChanged.
+    //
     public class MainViewModel : ViewModelBase
     {
+        //
+        // XAML Patterns (4.2):
+        //
+        // Store state here, and not in the view or controls.
+        //
         private string _name = "World";
         private string _greeting = "Hello";
 
@@ -18,6 +28,12 @@ namespace XAMLPatterns.StatefulViewModel.ViewModels
 
                 _name = value;
                 RaisePropertyChanged(() => Name);
+                //
+                // XAML Patterns (4.2):
+                //
+                // The salutation depends upon the name, so
+                // notify that it has changed, too.
+                //
                 RaisePropertyChanged(() => Salutation);
             }
         }

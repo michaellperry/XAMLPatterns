@@ -14,11 +14,22 @@ namespace XAMLPatterns.ViewModelEvents.Views
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
+            //
+            // XAML Patterns (4.10):
+            //
+            // Subscribe to the event so that the view can
+            // display a dialog prompt.
+            //
             ViewModel.DialogPrompt += ViewModel_DialogPrompt;
         }
 
         private void UserControl_Unloaded(object sender, RoutedEventArgs e)
         {
+            //
+            // XAML Patterns (4.10):
+            //
+            // Clean up after yourself.
+            //
             ViewModel.DialogPrompt -= ViewModel_DialogPrompt;
         }
 

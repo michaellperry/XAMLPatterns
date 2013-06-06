@@ -20,6 +20,11 @@ namespace XAMLPatterns.VisualStateBinding.ViewModels
             _west  = new RelayCommand(() => Direction = CompassPoint.West);
         }
 
+        //
+        // XAML Patterns (7.2):
+        //
+        // This property determins which visual state we should be in.
+        //
         public CompassPoint Direction
         {
             get { return _direction; }

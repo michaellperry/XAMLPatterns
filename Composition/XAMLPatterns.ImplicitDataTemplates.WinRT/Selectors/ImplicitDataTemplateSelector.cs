@@ -4,6 +4,12 @@ using Windows.UI.Xaml.Media;
 
 namespace XAMLPatterns.ImplicitDataTemplates.WinRT.Selectors
 {
+    //
+    // XAML Patterns (3.10):
+    //
+    // Define a data template selector that selects a template
+    // based on the type of the item.
+    //
     public class ImplicitDataTemplateSelector : DataTemplateSelector
     {
         protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
