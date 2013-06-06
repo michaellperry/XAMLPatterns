@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.DesignModeModels", "XAMLPatterns.DesignModeModels\XAMLPatterns.DesignModeModels.csproj", "{053FCF14-755D-4E04-8839-9BC040A25E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.DesignModeViewModels", "XAMLPatterns.DesignModeViewModels\XAMLPatterns.DesignModeViewModels.csproj", "{DDB2F9DE-A53F-4085-9CD2-35DC40B8A529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.InPlaceChildItems", "XAMLPatterns.InPlaceChildItems\XAMLPatterns.InPlaceChildItems.csproj", "{0E1A71D8-441E-4613-A4C7-80AF8C3E42D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.InPlaceData", "XAMLPatterns.InPlaceData\XAMLPatterns.InPlaceData.csproj", "{EBBFA27C-7A0E-4109-A824-F74F787A1E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.SampleData", "XAMLPatterns.SampleData\XAMLPatterns.SampleData.csproj", "{5FC4CD1D-D840-4E38-AD3C-7B0372FB110B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ShadowTypes", "XAMLPatterns.ShadowTypes\XAMLPatterns.ShadowTypes.csproj", "{C209A07E-58D0-4E75-B6D9-CA504A6BFA8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9A23E4D9-F176-47DC-9D95-AA9781B61A18}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{053FCF14-755D-4E04-8839-9BC040A25E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053FCF14-755D-4E04-8839-9BC040A25E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053FCF14-755D-4E04-8839-9BC040A25E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053FCF14-755D-4E04-8839-9BC040A25E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB2F9DE-A53F-4085-9CD2-35DC40B8A529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB2F9DE-A53F-4085-9CD2-35DC40B8A529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB2F9DE-A53F-4085-9CD2-35DC40B8A529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB2F9DE-A53F-4085-9CD2-35DC40B8A529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1A71D8-441E-4613-A4C7-80AF8C3E42D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1A71D8-441E-4613-A4C7-80AF8C3E42D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1A71D8-441E-4613-A4C7-80AF8C3E42D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1A71D8-441E-4613-A4C7-80AF8C3E42D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBBFA27C-7A0E-4109-A824-F74F787A1E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBBFA27C-7A0E-4109-A824-F74F787A1E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBBFA27C-7A0E-4109-A824-F74F787A1E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBBFA27C-7A0E-4109-A824-F74F787A1E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC4CD1D-D840-4E38-AD3C-7B0372FB110B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC4CD1D-D840-4E38-AD3C-7B0372FB110B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC4CD1D-D840-4E38-AD3C-7B0372FB110B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC4CD1D-D840-4E38-AD3C-7B0372FB110B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C209A07E-58D0-4E75-B6D9-CA504A6BFA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C209A07E-58D0-4E75-B6D9-CA504A6BFA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C209A07E-58D0-4E75-B6D9-CA504A6BFA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C209A07E-58D0-4E75-B6D9-CA504A6BFA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

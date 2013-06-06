@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.AttachedBehaviors", "XAMLPatterns.AttachedBehaviors\XAMLPatterns.AttachedBehaviors.csproj", "{19E03D1F-C477-4443-A545-C4F2784C2025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.BlendBehaviors", "XAMLPatterns.BlendBehaviors\XAMLPatterns.BlendBehaviors.csproj", "{BA0E088F-6272-4C97-9404-31DEA8468402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.DependentCommand", "XAMLPatterns.DependentCommand\XAMLPatterns.DependentCommand.csproj", "{5C521025-02EE-4FEC-9959-8A0B074D5322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ReactiveCommandPattern", "XAMLPatterns.ReactiveCommandPattern\XAMLPatterns.ReactiveCommandPattern.csproj", "{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.RelayCommandPattern", "XAMLPatterns.RelayCommandPattern\XAMLPatterns.RelayCommandPattern.csproj", "{12D2874A-A25E-4CF2-B505-5390ED28049E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.TargetedTriggerActions", "XAMLPatterns.TargetedTriggerActions\XAMLPatterns.TargetedTriggerActions.csproj", "{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.TriggerActions", "XAMLPatterns.TriggerActions\XAMLPatterns.TriggerActions.csproj", "{A1F1C578-91CA-41CA-A69C-6525954CC969}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{18863209-54D8-4758-BF15-282D5B3AB744}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19E03D1F-C477-4443-A545-C4F2784C2025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E03D1F-C477-4443-A545-C4F2784C2025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E03D1F-C477-4443-A545-C4F2784C2025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E03D1F-C477-4443-A545-C4F2784C2025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0E088F-6272-4C97-9404-31DEA8468402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0E088F-6272-4C97-9404-31DEA8468402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0E088F-6272-4C97-9404-31DEA8468402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0E088F-6272-4C97-9404-31DEA8468402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
