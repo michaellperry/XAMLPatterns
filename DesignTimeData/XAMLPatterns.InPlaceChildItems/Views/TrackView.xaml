@@ -10,7 +10,9 @@
 	<UserControl.Resources>
 		<DataTemplate x:Key="SessionItemTemplate">
 			<Grid Height="61.389" Width="217.451">
-				<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" Margin="46.571,0,0,0" Width="160.88" Height="32"/>
+                <!-- XAML Patterns (5.3): -->
+                <!-- Bind to the properties of the POCO. -->
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" Margin="46.571,0,0,0" Width="160.88" Height="32"/>
 				<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="38.102" Margin="6.715,5.572,0,0" Stroke="Black" VerticalAlignment="Top" Width="34.856"/>
 				<TextBlock HorizontalAlignment="Left" Height="14.469" Margin="46.571,37,0,0" TextWrapping="Wrap" Text="{Binding Speaker}" VerticalAlignment="Top" Width="100.715"/>
 			</Grid>
@@ -19,6 +21,8 @@
     <Grid Background="White">
     	<TextBlock HorizontalAlignment="Left" Height="51.714" Margin="26.571,10,0,0" TextWrapping="Wrap" Text="Web" VerticalAlignment="Top" Width="209.143" FontSize="26.667"/>
     	<ListBox HorizontalAlignment="Left" Height="215.286" Margin="38.571,66.714,0,0" VerticalAlignment="Top" Width="230.572" ItemTemplate="{DynamicResource SessionItemTemplate}">
+            <!-- XAML Patterns (5.3): -->
+            <!-- Create instances of the POCO in place. -->
             <i:Session
                 Title="TOUCHY BROWSER APPLICATIONS"
                 Speaker="Eric Sowell"></i:Session>

@@ -6,6 +6,11 @@ namespace XAMLPatterns.DesignModeViewModels.DataSources
 {
     public class DesignModeDataSource
     {
+        //
+        // XAML Patterns (5.5):
+        //
+        // Return a view model populated with design-mode data.
+        //
         public TrackViewModel Track
         {
             get

@@ -26,6 +26,13 @@ namespace XAMLPatterns.DependentCommand.ViewModels
             set { _installation.Agree = value; }
         }
 
+        //
+        // XAML Patterns (6.3):
+        //
+        // The install command will remember that Location and Agree
+        // were used last time, and will fire CanExecuteChanged whenever
+        // either one changes.
+        //
         public ICommand InstallCommand
         {
             get

@@ -4,6 +4,12 @@ namespace XAMLPatterns.ShadowTypes.DataSources
 {
     public class DesignModeDataSource
     {
+        //
+        // XAML Patterns (5.7):
+        //
+        // Create anonymous-typed objects with the same
+        // properties as the real view model.
+        //
         public object Track
         {
             get

@@ -6,6 +6,11 @@ namespace XAMLPatterns.TargetedriggerActions.Behaviors
 {
     public class MultipleClickBehavior : TargetedTriggerAction<UIElement>
     {
+        //
+        // XAML Patterns (6.8):
+        //
+        // Dependency properties to control how the behavior responds.
+        //
         public static DependencyProperty TimesProperty =
             DependencyProperty.Register(
                 "Times",
@@ -18,6 +23,11 @@ namespace XAMLPatterns.TargetedriggerActions.Behaviors
             set { SetValue(TimesProperty, value); }
         }
 
+        //
+        // XAML Patterns (6.7):
+        //
+        // Respond to the event by interacting with a different element.
+        //
         protected override void Invoke(object parameter)
         {
             var button = Target as ButtonBase;

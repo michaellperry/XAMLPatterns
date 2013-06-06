@@ -7,6 +7,11 @@ namespace XAMLPatterns.DesignModeModels.DataSources
 {
     public class DesignModeDataSource
     {
+        //
+        // XAML Patterns (5.6):
+        //
+        // Create a model in the constructor.
+        //
         private Track _track;
 
         public DesignModeDataSource()
@@ -46,6 +51,11 @@ namespace XAMLPatterns.DesignModeModels.DataSources
             });
         }
 
+        //
+        // XAML Patterns (5.6):
+        //
+        // Create view models based on the model.
+        //
         public TrackViewModel Track
         {
             get { return new TrackViewModel(_track); }

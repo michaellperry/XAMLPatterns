@@ -6,6 +6,11 @@ namespace XAMLPatterns.BlendBehaviors.Behaviors
 {
 	public class ClickBehavior : Behavior<UIElement>
 	{
+        //
+        // XAML Patterns (6.6):
+        //
+        // Dependency properties to control how the behavior responds.
+        //
         public static DependencyProperty CountProperty =
             DependencyProperty.Register(
                 "Count",
@@ -29,12 +34,22 @@ namespace XAMLPatterns.BlendBehaviors.Behaviors
 			set { SetValue(IncrementProperty, value); }
 		}
 
+        //
+        // XAML Patterns (6.6):
+        //
+        // Subscribe to events on the associated object.
+        //
         protected override void OnAttached()
         {
             AssociatedObject.MouseDown += AssociatedObject_MouseDown;
             base.OnAttached();
         }
 
+        //
+        // XAML Patterns (6.6):
+        //
+        // Clean up.
+        //
         protected override void OnDetaching()
         {
             AssociatedObject.MouseDown -= AssociatedObject_MouseDown;

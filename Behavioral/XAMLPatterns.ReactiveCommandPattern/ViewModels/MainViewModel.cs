@@ -15,6 +15,12 @@ namespace XAMLPatterns.ReactiveCommandPattern.ViewModels
 
         public MainViewModel()
         {
+            //
+            // XAML Patterns (6.4):
+            //
+            // Create a stream of booleans from source properties to determine
+            // if the event can be executed.
+            //
             var locationEvents = this
                 .ObservableForProperty(_ => _.Location)
                 .Value();
@@ -26,6 +32,12 @@ namespace XAMLPatterns.ReactiveCommandPattern.ViewModels
             _installCommand = new ReactiveCommand(
                 canExecute: canExecuteStream,
                 initialCondition: false);
+
+            //
+            // XAML Patterns (6.4):
+            //
+            // Subscribe to the event stream to invoke a delegate on execute.
+            //
             _installCommand.Subscribe(e => Install());
         }
 

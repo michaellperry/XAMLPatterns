@@ -13,6 +13,12 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
 
         public MainViewModel()
         {
+            //
+            // XAML Patterns (6.2):
+            //
+            // Create a relay command, and give it delegates to call
+            // on execute and to determine if it can execute.
+            //
             _installCommand = new RelayCommand(
                 () => Install(),
                 () => !string.IsNullOrEmpty(Location) && Agree);
@@ -30,6 +36,11 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
                 _location = value;
                 RaisePropertyChanged(() => Location);
 
+                //
+                // XAML Patterns (6.2):
+                //
+                // The install command depends upon the location.
+                //
                 _installCommand.RaiseCanExecuteChanged();
             }
         }
@@ -46,6 +57,11 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
                 _agree = value;
                 RaisePropertyChanged(() => Agree);
 
+                //
+                // XAML Patterns (6.2):
+                //
+                // The install command depends upon agreement.
+                //
                 _installCommand.RaiseCanExecuteChanged();
             }
         }

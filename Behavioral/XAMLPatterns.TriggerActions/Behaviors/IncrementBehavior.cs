@@ -6,6 +6,11 @@ namespace XAMLPatterns.TriggerActions.Behaviors
 {
     public class IncrementBehavior : TriggerAction<UIElement>
     {
+        //
+        // XAML Patterns (6.7):
+        //
+        // Dependency properties to control how the behavior responds.
+        //
         public static DependencyProperty CountProperty =
             DependencyProperty.Register(
                 "Count",
@@ -29,6 +34,12 @@ namespace XAMLPatterns.TriggerActions.Behaviors
             set { SetValue(IncrementProperty, value); }
         }
 
+        //
+        // XAML Patterns (6.7):
+        //
+        // Invoke the response. The designer chooses the event that will
+        // cause the behavior to be invoked.
+        //
         protected override void Invoke(object parameter)
         {
             Count += Increment;
