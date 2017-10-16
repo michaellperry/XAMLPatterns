@@ -1,8 +1,9 @@
-﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+﻿<Application x:Class="XAMLPatterns.ReactiveCommandPattern.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="clr-namespace:XAMLPatterns.ReactiveCommandPattern.ViewModels"
-             x:Class="XAMLPatterns.ReactiveCommandPattern.App"
-             >
+             xmlns:local="clr-namespace:XAMLPatterns.ReactiveCommandPattern"
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
         <vm:ViewModelLocator
             x:Key="Locator" />
