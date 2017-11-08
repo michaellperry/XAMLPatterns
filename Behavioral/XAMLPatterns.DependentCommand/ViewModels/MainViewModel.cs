@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Windows.Input;
 using UpdateControls.XAML;
 using XAMLPatterns.DependentCommand.Models;

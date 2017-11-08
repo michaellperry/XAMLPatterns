@@ -1,15 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.AttachedBehaviors", "XAMLPatterns.AttachedBehaviors\XAMLPatterns.AttachedBehaviors.csproj", "{19E03D1F-C477-4443-A545-C4F2784C2025}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.BlendBehaviors", "XAMLPatterns.BlendBehaviors\XAMLPatterns.BlendBehaviors.csproj", "{BA0E088F-6272-4C97-9404-31DEA8468402}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.DependentCommand", "XAMLPatterns.DependentCommand\XAMLPatterns.DependentCommand.csproj", "{5C521025-02EE-4FEC-9959-8A0B074D5322}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ReactiveCommandPattern", "XAMLPatterns.ReactiveCommandPattern\XAMLPatterns.ReactiveCommandPattern.csproj", "{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.RelayCommandPattern", "XAMLPatterns.RelayCommandPattern\XAMLPatterns.RelayCommandPattern.csproj", "{12D2874A-A25E-4CF2-B505-5390ED28049E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.TargetedTriggerActions", "XAMLPatterns.TargetedTriggerActions\XAMLPatterns.TargetedTriggerActions.csproj", "{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}"
 EndProject
@@ -21,6 +17,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{188632
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.DependentCommand", "XAMLPatterns.DependentCommand\XAMLPatterns.DependentCommand.csproj", "{5D649A73-AD3C-4228-9084-8F57B3CD1EA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ReactiveCommandPattern", "XAMLPatterns.ReactiveCommandPattern\XAMLPatterns.ReactiveCommandPattern.csproj", "{5FC5C445-9146-4095-B6B5-9B1611C5F131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.RelayCommandPattern", "XAMLPatterns.RelayCommandPattern\XAMLPatterns.RelayCommandPattern.csproj", "{0C170769-F1C9-4C75-88C7-EB88CC0C0388}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,18 +38,6 @@ Global
 		{BA0E088F-6272-4C97-9404-31DEA8468402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA0E088F-6272-4C97-9404-31DEA8468402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA0E088F-6272-4C97-9404-31DEA8468402}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C521025-02EE-4FEC-9959-8A0B074D5322}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4230A2B-0EA5-4D17-8D31-60C6FED55A9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12D2874A-A25E-4CF2-B505-5390ED28049E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BAE7492-6EFA-4BB7-A8FA-8AD744239463}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,8 +46,23 @@ Global
 		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F1C578-91CA-41CA-A69C-6525954CC969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D649A73-AD3C-4228-9084-8F57B3CD1EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D649A73-AD3C-4228-9084-8F57B3CD1EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D649A73-AD3C-4228-9084-8F57B3CD1EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D649A73-AD3C-4228-9084-8F57B3CD1EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC5C445-9146-4095-B6B5-9B1611C5F131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC5C445-9146-4095-B6B5-9B1611C5F131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC5C445-9146-4095-B6B5-9B1611C5F131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC5C445-9146-4095-B6B5-9B1611C5F131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C170769-F1C9-4C75-88C7-EB88CC0C0388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C170769-F1C9-4C75-88C7-EB88CC0C0388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C170769-F1C9-4C75-88C7-EB88CC0C0388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C170769-F1C9-4C75-88C7-EB88CC0C0388}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {933A2AE3-1836-4822-A7BF-7E4F691A34AF}
 	EndGlobalSection
 EndGlobal
