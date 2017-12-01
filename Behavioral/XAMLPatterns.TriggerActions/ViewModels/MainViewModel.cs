@@ -23,7 +23,6 @@ namespace XAMLPatterns.TriggerActions.ViewModels
                 if (value == _counter)
                     return;
 
-                RaisePropertyChanging(() => Counter);
                 _counter = value;
                 RaisePropertyChanged(() => Counter);
             }

@@ -32,7 +32,6 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
                 if (_location == value)
                     return;
 
-                RaisePropertyChanging(() => Location);
                 _location = value;
                 RaisePropertyChanged(() => Location);
 
@@ -53,7 +52,6 @@ namespace XAMLPatterns.RelayCommandPattern.ViewModels
                 if (value == _agree)
                     return;
 
-                RaisePropertyChanging(() => Agree);
                 _agree = value;
                 RaisePropertyChanged(() => Agree);
 

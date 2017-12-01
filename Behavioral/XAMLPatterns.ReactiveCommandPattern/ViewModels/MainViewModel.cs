@@ -44,13 +44,13 @@ namespace XAMLPatterns.ReactiveCommandPattern.ViewModels
         public string Location
         {
             get { return _Location; }
-            set { this.RaiseAndSetIfChanged(_ => _.Location, value); }
+            set { this.RaiseAndSetIfChanged(ref _Location, value); }
         }
 
         public bool Agree
         {
             get { return _Agree; }
-            set { this.RaiseAndSetIfChanged(_ => _.Agree, value); }
+            set { this.RaiseAndSetIfChanged(ref _Agree, value); }
         }
 
         public ICommand InstallCommand
