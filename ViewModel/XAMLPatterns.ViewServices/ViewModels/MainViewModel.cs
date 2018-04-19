@@ -17,7 +17,6 @@ namespace XAMLPatterns.ViewModelServices.ViewModels
                 if (value == _count)
                     return;
 
-                RaisePropertyChanging(() => this.Count);
                 _count = value;
                 RaisePropertyChanged(() => this.Count);
             }

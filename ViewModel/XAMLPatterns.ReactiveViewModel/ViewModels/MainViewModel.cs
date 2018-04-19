@@ -48,7 +48,7 @@ namespace XAMLPatterns.ReactiveViewModel.ViewModels
         public string SearchTerm
         {
             get { return _SearchTerm; }
-            set { this.RaiseAndSetIfChanged(x => x.SearchTerm, value); }
+            set { this.RaiseAndSetIfChanged(ref _SearchTerm, value); }
         }
 
         public List<string> Matches

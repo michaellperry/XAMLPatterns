@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using System;
 using XAMLPatterns.MessageBus.Messages;
 using XAMLPatterns.MessageBus.Models;
 
@@ -37,7 +38,6 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 if (value == _speaker)
                     return;
 
-                RaisePropertyChanging(() => this.Speaker);
                 _speaker = value;
                 RaisePropertyChanged(() => this.Speaker);
             }
@@ -51,7 +51,6 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 if (value == _title)
                     return;
 
-                RaisePropertyChanging(() => this.Title);
                 _title = value;
                 RaisePropertyChanged(() => this.Title);
 

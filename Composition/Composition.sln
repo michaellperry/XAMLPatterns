@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.Assets", "XAMLPatterns.Assets\XAMLPatterns.Assets.csproj", "{64F044C7-3219-449F-A088-8B56D331D17A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.BalancedWhitespace", "XAMLPatterns.BalancedWhitespace\XAMLPatterns.BalancedWhitespace.csproj", "{074A3430-650D-4EC6-98D0-03F15E8A8F5C}"
@@ -12,10 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ExtensionGrid", "XAMLPatterns.ExtensionGrid\XAMLPatterns.ExtensionGrid.csproj", "{CBAC6B48-CFC6-443B-944A-3025B0A63391}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.GridLayout", "XAMLPatterns.GridLayout\XAMLPatterns.GridLayout.csproj", "{10B38650-4801-419F-BE2F-A060231EE740}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTemplates.SL", "XAMLPatterns.ImplicitDataTemplates.SL\XAMLPatterns.ImplicitDataTemplates.SL.csproj", "{953FB6A9-EF47-4EA9-947A-E4D1457AF403}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTemplates.WinRT", "XAMLPatterns.ImplicitDataTemplates.WinRT\XAMLPatterns.ImplicitDataTemplates.WinRT.csproj", "{C863CED4-2F0F-4888-BB98-C8ACADB6597C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAMLPatterns.ImplicitDataTemplates.WPF", "XAMLPatterns.ImplicitDataTemplates.WPF\XAMLPatterns.ImplicitDataTemplates.WPF.csproj", "{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}"
 EndProject
@@ -100,40 +98,6 @@ Global
 		{10B38650-4801-419F-BE2F-A060231EE740}.Release|ARM.ActiveCfg = Release|Any CPU
 		{10B38650-4801-419F-BE2F-A060231EE740}.Release|x64.ActiveCfg = Release|Any CPU
 		{10B38650-4801-419F-BE2F-A060231EE740}.Release|x86.ActiveCfg = Release|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|Any CPU.Build.0 = Release|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|ARM.ActiveCfg = Release|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|x64.ActiveCfg = Release|Any CPU
-		{953FB6A9-EF47-4EA9-947A-E4D1457AF403}.Release|x86.ActiveCfg = Release|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|ARM.ActiveCfg = Debug|ARM
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|ARM.Build.0 = Debug|ARM
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|ARM.Deploy.0 = Debug|ARM
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|x64.ActiveCfg = Debug|x64
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|x64.Build.0 = Debug|x64
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|x64.Deploy.0 = Debug|x64
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|x86.ActiveCfg = Debug|x86
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|x86.Build.0 = Debug|x86
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Debug|x86.Deploy.0 = Debug|x86
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|ARM.ActiveCfg = Release|ARM
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|ARM.Build.0 = Release|ARM
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|ARM.Deploy.0 = Release|ARM
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x64.ActiveCfg = Release|x64
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x64.Build.0 = Release|x64
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x64.Deploy.0 = Release|x64
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x86.ActiveCfg = Release|x86
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x86.Build.0 = Release|x86
-		{C863CED4-2F0F-4888-BB98-C8ACADB6597C}.Release|x86.Deploy.0 = Release|x86
 		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4877D110-0AD2-4FDC-BF56-EEDFEEAEC550}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -157,5 +121,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37ECE32-0D90-418A-9CD9-7ACE91375424}
 	EndGlobalSection
 EndGlobal

@@ -20,7 +20,6 @@ namespace XAMLPatterns.ViewModelEvents.ViewModels
                 if (value == _count)
                     return;
 
-                RaisePropertyChanging(() => this.Count);
                 _count = value;
                 RaisePropertyChanged(() => this.Count);
             }

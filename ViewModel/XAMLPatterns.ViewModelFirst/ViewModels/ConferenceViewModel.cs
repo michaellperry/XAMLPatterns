@@ -40,7 +40,6 @@ namespace XAMLPatterns.ViewModelFirst.ViewModels
                 if (_selectedSession == value)
                     return;
 
-                RaisePropertyChanging(() => this.SelectedSession);
                 _selectedSession = value;
                 RaisePropertyChanged(() => this.SelectedSession);
 

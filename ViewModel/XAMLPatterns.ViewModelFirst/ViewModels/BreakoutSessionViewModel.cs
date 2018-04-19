@@ -21,7 +21,6 @@ namespace XAMLPatterns.ViewModelFirst.ViewModels
                 if (value == _speaker)
                     return;
 
-                RaisePropertyChanging(() => this.Speaker);
                 _speaker = value;
                 RaisePropertyChanged(() => this.Speaker);
             }

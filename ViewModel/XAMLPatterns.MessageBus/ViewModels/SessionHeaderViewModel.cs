@@ -31,7 +31,6 @@ namespace XAMLPatterns.MessageBus.ViewModels
                 if (value == _name)
                     return;
 
-                RaisePropertyChanging(() => this.Title);
                 _name = value;
                 RaisePropertyChanged(() => this.Title);
             }

@@ -36,7 +36,6 @@ namespace XAMLPatterns.ViewModelFirst.ViewModels
                 if (value == _title)
                     return;
 
-                RaisePropertyChanging(() => this.Title);
                 _title = value;
                 RaisePropertyChanged(() => this.Title);
 
